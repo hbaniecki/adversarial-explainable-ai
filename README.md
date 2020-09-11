@@ -1,6 +1,6 @@
-# [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) Adversarial Interpretable Machine Learning
+# Adversarial Explainable AI
 
-A curated list of awesome adversarial interpretable machine learning resources, inspired by
+A curated list of Adversarial Explainable AI (XAI) resources, inspired by
 [awesome-adversarial-machine-learning](https://github.com/yenchenlin/awesome-adversarial-machine-learning) and
 [awesome-interpretable-machine-learning](https://github.com/lopusz/awesome-interpretable-machine-learning).
 Due to the novelty of the field, this list is very much in the making. Contributions are welcome - send a pull request
@@ -8,7 +8,7 @@ or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.
 
 <p align="center"><img src="fig/aiml.png"></p>
 
-There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using model explanations. Nowadays, attacks on interpretable machine learning techniques come to light, so does the defense to such adversary. *Veritas Vincit*
+There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, attacks on model explanations come to light, so does the defense to such adversary. *Veritas Vincit*
 
 ## Papers
 
@@ -73,10 +73,25 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>D. Slack et al. <em>AAAI/ACM Conference on AI, Ethics, and Society</em> 2020 </summary>
   As machine learning black boxes are increasingly being deployed in domains such as healthcare and criminal justice, there is growing emphasis on building tools and techniques for explaining these black boxes in an interpretable manner. Such explanations are being leveraged by domain experts to diagnose systematic errors and underlying biases of black boxes. In this paper, we demonstrate that post hoc explanations techniques that rely on input perturbations, such as LIME and SHAP, are not reliable. Specifically, we propose a novel scaffolding technique that effectively hides the biases of any given classifier by allowing an adversarial entity to craft an arbitrary desired explanation. Our approach can be used to scaffold any biased classifier in such a way that its predictions on the input data distribution still remain biased, but the post hoc explanations of the scaffolded classifier look innocuous. Using extensive evaluation with multiple real world datasets (including COMPAS), we demonstrate how extremely biased (racist) classifiers crafted by our framework can easily fool popular explanation techniques such as LIME and SHAP into generating innocuous explanations which do not reflect the underlying biases.
   </details>
+* [“How do I fool you?": Manipulating User Trust via Misleading Black Box Explanations](https://dl.acm.org/doi/10.1145/3375627.3375833#:~:text=pdf)
+  <details>
+  <summary>H. Lakkaraju & O. Bastani <em>AAAI/ACM Conference on AI, Ethics, and Society</em> 2020 </summary>
+  As machine learning black boxes are increasingly being deployed in critical domains such as healthcare and criminal justice, there has been a growing emphasis on developing techniques for explaining these black boxes in a human interpretable manner. There has been recent concern that a high-fidelity explanation of a black box ML model may not accurately reflect the biases in the black box. As a consequence, explanations have the potential to mislead human users into trusting a problematic black box. In this work, we rigorously explore the notion of misleading explanations and how they influence user trust in black box models. Specifically, we propose a novel theoretical framework for understanding and generating misleading explanations, and carry out a user study with domain experts to demonstrate how these explanations can be used to mislead users. Our work is the first to empirically establish how user trust in black box models can be manipulated via misleading explanations.
+  </details>
 * [Faking Fairness via Stealthily Biased Sampling](https://www.aaai.org/ojs/index.php/AAAI/article/view/5377#:~:text=pdf)
   <details>
   <summary>K. Fukuchi et al. <em>AAAI Conference on Artificial Intelligence</em> 2020 </summary>
   Auditing fairness of decision-makers is now in high demand. To respond to this social demand, several fairness auditing tools have been developed. The focus of this study is to raise an awareness of the risk of malicious decision-makers who fake fairness by abusing the auditing tools and thereby deceiving the social communities. The question is whether such a fraud of the decision-maker is detectable so that the society can avoid the risk of fake fairness. In this study, we answer this question negatively. We specifically put our focus on a situation where the decision-maker publishes a benchmark dataset as the evidence of his/her fairness and attempts to deceive a person who uses an auditing tool that computes a fairness metric. To assess the (un)detectability of the fraud, we explicitly construct an algorithm, the stealthily biased sampling, that can deliberately construct an evil benchmark dataset via subsampling. We show that the fraud made by the stealthily based sampling is indeed difficult to detect both theoretically and empirically.
+  </details>
+* [Sanity Checks for Saliency Metrics](https://www.aaai.org/ojs/index.php/AAAI/article/view/6064#:~:text=pdf)
+  <details>
+  <summary>R. Tomsett et al. <em>AAAI Conference on Artificial Intelligence</em> 2020 </summary>
+  Saliency maps are a popular approach to creating post-hoc explanations of image classifier outputs. These methods produce estimates of the relevance of each pixel to the classification output score, which can be displayed as a saliency map that highlights important pixels. Despite a proliferation of such methods, little effort has been made to quantify how good these saliency maps are at capturing the true relevance of the pixels to the classifier output (i.e. their “fidelity”). We therefore investigate existing metrics for evaluating the fidelity of saliency methods (i.e. saliency metrics). We find that there is little consistency in the literature in how such metrics are calculated, and show that such inconsistencies can have a significant effect on the measured fidelity. Further, we apply measures of reliability developed in the psychometric testing literature to assess the consistency of saliency metrics when applied to individual saliency maps. Our results show that saliency metrics can be statistically unreliable and inconsistent, indicating that comparative rankings between saliency methods generated using such metrics can be untrustworthy.
+  </details>
+* [Fairwashing Explanations with Off-Manifold Detergent](https://proceedings.icml.cc/static/paper_files/icml/2020/3760-Paper.pdf)
+  <details>
+  <summary>C. J. Anderset al. <em>International Conference on Machine Learning</em> 2020 </summary>
+  Explanation methods promise to make black-box classifiers more transparent. As a result, it is hoped that they can act as proof for a sensible, fair and trustworthy decision-making process of the algorithm and thereby increase its acceptance by the end-users. In this paper, we show both theoretically and experimentally that these hopes are presently unfounded. Specifically, we show that, for any classifier g, one can always construct another classifier g' which has the same behavior on the data (same train, validation, and test error) but has arbitrarily manipulated explanation maps. We derive this statement theoretically using differential geometry and demonstrate it experimentally for various explanation methods, architectures, and datasets. Motivated by our theoretical insights, we then propose a modification of existing explanation methods which makes them significantly more robust.
   </details>
 * [Interpretable Deep Learning under Fire](https://www.usenix.org/conference/usenixsecurity20/presentation/zhang-xinyang#:~:text=pdf)
   <details>
@@ -130,3 +145,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>U. Bhatt et al. <em>arXiv preprint v1</em> 2020</summary>
   A feature-based model explanation denotes how much each input feature contributes to a model's output for a given data point. As the number of proposed explanation functions grows, we lack quantitative evaluation criteria to help practitioners know when to use which explanation function. This paper proposes quantitative evaluation criteria for feature-based explanations: low sensitivity, high faithfulness, and low complexity. We devise a framework for aggregating explanation functions. We develop a procedure for learning an aggregate explanation function with lower complexity and then derive a new aggregate Shapley value explanation function that minimizes sensitivity.
   </details>
+
+## Software
+
+...
