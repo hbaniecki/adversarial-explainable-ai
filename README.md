@@ -8,7 +8,9 @@ or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.
 
 <p align="center"><img src="fig/aiml.png"></p>
 
-There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, attacks on model explanations come to light, so does the defense to such adversary. *Veritas Vincit*
+There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, attacks on model explanations come to light, so does the defense to such adversary. 
+
+<p align="center"> <em>Veritas Vincit</em> </p>
 
 ## Papers
 
