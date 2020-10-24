@@ -8,7 +8,7 @@ or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.
 
 <p align="center"><img src="fig/aiml.png"></p>
 
-There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, attacks on model explanations come to light, so does the defense to such adversary. 
+There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. **Nowadays, attacks on model explanations come to light, so does the defense to such adversary.**
 
 <p align="center"> <em>Veritas Vincit</em> </p>
 
@@ -37,7 +37,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
     The explainable AI literature contains multiple notions of what an explanation is and what desiderata explanations should satisfy. One implicit source of disagreement is how far the explanations should reflect real patterns in the data or the world. This disagreement underlies debates about other desiderata, such as how robust explanations are to slight perturbations in the input data. I argue that robustness is desirable to the extent that we’re concerned about finding real patterns in the world. The import of real patterns differs according to the problem context. In some contexts, non-robust explanations can constitute a moral hazard. By being clear about the extent to which we care about capturing real patterns, we can also determine whether the Rashomon Effect is a boon or a bane.
   </details>
 
-### Attack
+### Attacks on XAI
 
 * [Interpretation of Neural Networks Is Fragile](https://www.aaai.org/ojs/index.php/AAAI/article/view/4252#:~:text=pdf)
   <details>
@@ -64,7 +64,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>A. K. Dombrowski et al. <em>Advances in Neural Information Processing System</em> 2019 </summary>
   Explanation methods aim to make neural networks more trustworthy and interpretable. In this paper, we demonstrate a property of explanation methods which is disconcerting for both of these purposes. Namely, we show that explanations can be manipulated arbitrarily by applying visually hardly perceptible perturbations to the input that keep the network's output approximately constant. We establish theoretically that this phenomenon can be related to certain geometrical properties of neural networks. This allows us to derive an upper bound on the susceptibility of explanations to manipulations. Based on this result, we propose effective mechanisms to enhance the robustness of explanations.
   </details>
-  <p align="center"><img height='350' src="fig/attack.png"></p>
+  <p align="center"><img height='500' src="fig/attack.png"></p>
 * [You Shouldn't Trust Me: Learning Models Which Conceal Unfairness From Multiple Explanation Methods](http://ecai2020.eu/papers/72_paper.pdf)
   <details>
   <summary>B. Dimanov et al. <em>European Conference on Artificial Intelligence</em> 2020 </summary>
@@ -106,7 +106,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   The concept of explainability is envisioned to satisfy society's demands for transparency on machine learning decisions. The concept is simple: like humans, algorithms should explain the rationale behind their decisions so that their fairness can be assessed. While this approach is promising in a local context (e.g. to explain a model during debugging at training time), we argue that this reasoning cannot simply be transposed in a remote context, where a trained model by a service provider is only accessible through its API. This is problematic as it constitutes precisely the target use-case requiring transparency from a societal perspective. Through an analogy with a club bouncer (which may provide untruthful explanations upon customer reject), we show that providing explanations cannot prevent a remote service from lying about the true reasons leading to its decisions. More precisely, we prove the impossibility of remote explainability for single explanations, by constructing an attack on explanations that hides discriminatory features to the querying user. We provide an example implementation of this attack. We then show that the probability that an observer spots the attack, using several explanations for attempting to find incoherences, is low in practical settings. This undermines the very concept of remote explainability in general.
   </details>
 
-### Defense
+### Defense from attacks on XAI
 
 * [Adversarial Explanations for Understanding Image Classification Decisions and Improved NN Robustness](https://arxiv.org/abs/1906.02896#:~:text=pdf)
   <details>
@@ -123,7 +123,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>L. Rieger & L. K. Hansen <em>ICML Workshop on Human Interpretability in Machine Learning</em> 2020 </summary>
   With machine learning models being used for more sensitive applications, we rely on interpretability methods to prove that no discriminating attributes were used for classification. A potential concern is the so-called "fair-washing" - manipulating a model such that the features used in reality are hidden and more innocuous features are shown to be important instead. In our work we present an effective defence against such adversarial attacks on neural networks. By a simple aggregation of multiple explanation methods, the network becomes robust against manipulation. This holds even when the attacker has exact knowledge of the model weights and the explanation methods used.
   </details>
-  <p align="center"><img height='350' src="fig/defense.png"></p>
+  <p align="center"><img height='500' src="fig/defense.png"></p>
 * [Proper Network Interpretability Helps Adversarial Robustness in Classification](https://proceedings.icml.cc/static/paper_files/icml/2020/1661-Paper.pdf)
   <details>
   <summary>A. Boopathy et al. <em>International Conference on Machine Learning</em> 2020 </summary>
@@ -142,12 +142,34 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>A. Warnecke et al. <em>IEEE European Symposium on Security and Privacy</em> 2020</summary>
   Deep learning is increasingly used as a building block of security systems. Unfortunately, neural networks are hard to interpret and typically opaque to the practitioner. The machine learning community has started to address this problem by developing methods for explaining the predictions of neural networks. While several of these approaches have been successfully applied in the area of computer vision, their application in security has received little attention so far. It is an open question which explanation methods are appropriate for computer security and what requirements they need to satisfy. In this paper, we introduce criteria for comparing and evaluating explanation methods in the context of computer security. These cover general properties, such as the accuracy of explanations, as well as security-focused aspects, such as the completeness, efficiency, and robustness. Based on our criteria, we investigate six popular explanation methods and assess their utility in security systems for malware detection and vulnerability discovery. We observe significant differences between the methods and build on these to derive general recommendations for selecting and applying explanation methods in computer security.
   </details>
-* [Evaluating and Aggregating Feature-based Model Explanations](https://arxiv.org/abs/2005.00631#:~:text=pdf)
+* [Evaluating and Aggregating Feature-based Model Explanations](https://www.ijcai.org/Proceedings/2020/0417.pdf)
   <details>
-  <summary>U. Bhatt et al. <em>arXiv preprint v1</em> 2020</summary>
+  <summary>U. Bhatt et al. <em>International Joint Conference on Artificial Intelligence</em> 2020</summary>
   A feature-based model explanation denotes how much each input feature contributes to a model's output for a given data point. As the number of proposed explanation functions grows, we lack quantitative evaluation criteria to help practitioners know when to use which explanation function. This paper proposes quantitative evaluation criteria for feature-based explanations: low sensitivity, high faithfulness, and low complexity. We devise a framework for aggregating explanation functions. We develop a procedure for learning an aggregate explanation function with lower complexity and then derive a new aggregate Shapley value explanation function that minimizes sensitivity.
   </details>
 
 ## Software
 
 ...
+
+## Further Related
+
+### Attacks on AI using XAI
+
+* [On the Privacy Risks of Model Explanations](https://arxiv.org/abs/1907.00164#:~:text=pdf)
+  <details>
+  <summary>R. Shokri et al. <em>arXiv preprint v5</em> 2020 </summary>
+  Privacy and transparency are two key elements of trustworthy machine learning. Model explanations can provide more insight into a model's decisions on input data. This, however, can impose a significant privacy risk to the model's training set. We analyze whether an adversary can exploit model explanations to infer sensitive information about the model's training set. We investigate this research problem primarily using membership inference attacks: inferring whether a data point belongs to the training set of a model given its explanations. We study this problem for three popular types of model explanations: backpropagation-based, perturbation-based and example-based attribution methods. We devise membership inference attacks based on these model explanations, and extensively test them on a variety of datasets. We show that both backpropagation- and example-based explanations can leak a significant amount of information about individual data points in the training set. More importantly, we design reconstruction attacks against example-based model explanations, and use them to recover significant parts of the training set. Finally, we discuss the resistance of perturbation-based attribution methods to existing attack models; interestingly, their resistance to such attacks is related to a crucial shortcoming of such model explanations uncovered by recent works.
+  </details>
+* *Contributions are welcome*
+
+### Defense from attacks on AI using XAI
+
+* [When Explainability Meets Adversarial Learning: Detecting Adversarial Examples using SHAP Signatures](https://arxiv.org/abs/1909.03418#:~:text=pdf)
+  <details>
+  <summary>G. Fidel et al. <em>International Joint Conference on Neural Networks</em> 2020 </summary>
+  State-of-the-art deep neural networks (DNNs) are highly effective in solving many complex real-world problems. However, these models are vulnerable to adversarial perturbation attacks, and despite the plethora of research in this domain, to this day, adversaries still have the upper hand in the cat and mouse game of adversarial example generation methods vs. detection and prevention methods. In this research, we present a novel detection method that uses Shapley Additive Explanations (SHAP) values computed for the internal layers of a DNN classifier to discriminate between normal and adversarial inputs. We evaluate our method by building an extensive dataset of adversarial examples over the popular CIFAR-10 and MNIST datasets, and training a neural network-based detector to distinguish between normal and adversarial inputs. We evaluate our detector against adversarial examples generated by diverse state-of-the-art attacks and demonstrate its high detection accuracy and strong generalization ability to adversarial inputs generated with different attack methods.
+  </details>
+* *Contributions are welcome*
+
+
