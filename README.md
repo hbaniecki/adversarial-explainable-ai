@@ -137,6 +137,11 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ### Other
 
+* [A Benchmark for Interpretability Methods in Deep Neural Networks](http://papers.neurips.cc/paper/9167-a-benchmark-for-interpretability-methods-in-deep-neural-networkss#:~:text=pdf)
+  <details>
+  <summary> S. Hooker et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
+    We propose an empirical measure of the approximate accuracy of feature importance estimates in deep neural networks. Our results across several large-scale image classification datasets show that many popular interpretability methods produce estimates of feature importance that are not better than a random designation of feature importance. Only certain ensemble based approaches---VarGrad and SmoothGrad-Squared---outperform such a random assignment of importance. The manner of ensembling remains critical, we show that some approaches do no better then the underlying method but carry a far higher computational burden.
+  </details>
 * [Evaluating Explanation Methods for Deep Learning in Security](https://arxiv.org/abs/1906.02108#:~:text=pdf)
   <details>
   <summary>A. Warnecke et al. <em>IEEE European Symposium on Security and Privacy</em> 2020</summary>
