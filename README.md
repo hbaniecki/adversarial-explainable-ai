@@ -8,13 +8,21 @@ or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.
 
 <p align="center"><img src="fig/aiml.png"></p>
 
-There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. **Nowadays, attacks on model explanations come to light, so does the defense to such adversary.**
+There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, **attacks on model explanations** come to light, so does the **defense** to such adversary.
 
 <p align="center"> <em>Veritas Vincit</em> </p>
 
 ## Papers
 
-### General
+**Introduction**
+
+* [Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)
+  <details>
+  <summary> A. Barredo-Arrieta et al. <em>Information Fusion</em> 2019 </summary>
+    In the last few years, Artificial Intelligence (AI) has achieved a notable momentum that, if harnessed appropriately, may deliver the best of expectations over many application sectors across the field. For this to occur shortly in Machine Learning, the entire community stands in front of the barrier of explainability, an inherent problem of the latest techniques brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were not present in the last hype of AI (namely, expert systems and rule based models). Paradigms underlying this problem fall within the so-called eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature for the practical deployment of AI models. The overview presented in this article examines the existing literature and contributions already done in the field of XAI, including a prospect toward what is yet to be reached. For this purpose we summarize previous efforts made to define explainability in Machine Learning, establishing a novel definition of explainable Machine Learning that covers such prior conceptual propositions with a major focus on the audience for which the explainability is sought. Departing from this definition, we propose and discuss about a taxonomy of recent contributions related to the explainability of different Machine Learning models, including those aimed at explaining Deep Learning methods for which a second dedicated taxonomy is built and examined in detail. This critical literature analysis serves as the motivating background for a series of challenges faced by XAI, such as the interesting crossroads of data fusion and explainability. Our prospects lead toward the concept of Responsible Artificial Intelligence, namely, a methodology for the large-scale implementation of AI methods in real organizations with fairness, model explainability and accountability at its core. Our ultimate goal is to provide newcomers to the field of XAI with a thorough taxonomy that can serve as reference material in order to stimulate future research advances, but also to encourage experts and professionals from other disciplines to embrace the benefits of AI in their activity sectors, without any prior bias for its lack of interpretability.
+  </details>
+
+**General**
 
 * [Towards Robust Interpretability with Self-Explaining Neural Networks](https://papers.nips.cc/paper/8003-towards-robust-interpretability-with-self-explaining-neural-networks#:~:text=pdf)
   <details>
@@ -92,7 +100,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Fairwashing Explanations with Off-Manifold Detergent](https://proceedings.icml.cc/static/paper_files/icml/2020/3760-Paper.pdf)
   <details>
-  <summary>C. J. Anderset al. <em>International Conference on Machine Learning</em> 2020 </summary>
+  <summary>C. J. Anderset et al. <em>International Conference on Machine Learning</em> 2020 </summary>
   Explanation methods promise to make black-box classifiers more transparent. As a result, it is hoped that they can act as proof for a sensible, fair and trustworthy decision-making process of the algorithm and thereby increase its acceptance by the end-users. In this paper, we show both theoretically and experimentally that these hopes are presently unfounded. Specifically, we show that, for any classifier g, one can always construct another classifier g' which has the same behavior on the data (same train, validation, and test error) but has arbitrarily manipulated explanation maps. We derive this statement theoretically using differential geometry and demonstrate it experimentally for various explanation methods, architectures, and datasets. Motivated by our theoretical insights, we then propose a modification of existing explanation methods which makes them significantly more robust.
   </details>
 * [Interpretable Deep Learning under Fire](https://www.usenix.org/conference/usenixsecurity20/presentation/zhang-xinyang#:~:text=pdf)
@@ -100,10 +108,10 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>X. Zhang et al. <em>USENIX Security Symposium</em> 2020 </summary>
   Providing explanations for deep neural network (DNN) models is crucial for their use in security-sensitive domains. A plethora of interpretation models have been proposed to help users understand the inner workings of DNNs: how does a DNN arrive at a specific decision for a given input? The improved interpretability is believed to offer a sense of security by involving human in the decision-making process. Yet, due to its data-driven nature, the interpretability itself is potentially susceptible to malicious manipulations, about which little is known thus far. Here we bridge this gap by conducting the first systematic study on the security of interpretable deep learning systems (IDLSes). We show that existing IDLSes are highly vulnerable to adversarial manipulations. Specifically, we present ADV2, a new class of attacks that generate adversarial inputs not only misleading target DNNs but also deceiving their coupled interpretation models. Through empirical evaluation against four major types of IDLSes on benchmark datasets and in security-critical applications (e.g., skin cancer diagnosis), we demonstrate that with ADV2 the adversary is able to arbitrarily designate an input's prediction and interpretation. Further, with both analytical and empirical evidence, we identify the prediction-interpretation gap as one root cause of this vulnerability -- a DNN and its interpretation model are often misaligned, resulting in the possibility of exploiting both models simultaneously. Finally, we explore potential countermeasures against ADV2, including leveraging its low transferability and incorporating it in an adversarial training framework. Our findings shed light on designing and operating IDLSes in a more secure and informative fashion, leading to several promising research directions.
   </details>
-* [The Bouncer Problem: Challenges to Remote Explainability](https://arxiv.org/abs/1910.01432#:~:text=pdf)
+* [Remote explainability faces the bouncer problem](https://www.nature.com/articles/s42256-020-0216-z)
   <details>
-  <summary>E. L. Merrer & G. Tredan <em>arXiv preprint v2</em> 2020 </summary>
-  The concept of explainability is envisioned to satisfy society's demands for transparency on machine learning decisions. The concept is simple: like humans, algorithms should explain the rationale behind their decisions so that their fairness can be assessed. While this approach is promising in a local context (e.g. to explain a model during debugging at training time), we argue that this reasoning cannot simply be transposed in a remote context, where a trained model by a service provider is only accessible through its API. This is problematic as it constitutes precisely the target use-case requiring transparency from a societal perspective. Through an analogy with a club bouncer (which may provide untruthful explanations upon customer reject), we show that providing explanations cannot prevent a remote service from lying about the true reasons leading to its decisions. More precisely, we prove the impossibility of remote explainability for single explanations, by constructing an attack on explanations that hides discriminatory features to the querying user. We provide an example implementation of this attack. We then show that the probability that an observer spots the attack, using several explanations for attempting to find incoherences, is low in practical settings. This undermines the very concept of remote explainability in general.
+  <summary>E. L. Merrer & G. Tredan <em>Nature Machine Intelligence</em> 2020 </summary>
+  The concept of explainability is envisioned to satisfy society’s demands for transparency about machine learning decisions. The concept is simple: like humans, algorithms should explain the rationale behind their decisions so that their fairness can be assessed. Although this approach is promising in a local context (for example, the model creator explains it during debugging at the time of training), we argue that this reasoning cannot simply be transposed to a remote context, where a model trained by a service provider is only accessible to a user through a network and its application programming interface. This is problematic, as it constitutes precisely the target use case requiring transparency from a societal perspective. Through an analogy with a club bouncer (who may provide untruthful explanations upon customer rejection), we show that providing explanations cannot prevent a remote service from lying about the true reasons leading to its decisions. More precisely, we observe the impossibility of remote explainability for single explanations by constructing an attack on explanations that hides discriminatory features from the querying user. We provide an example implementation of this attack. We then show that the probability that an observer spots the attack, using several explanations for attempting to find incoherences, is low in practical settings. This undermines the very concept of remote explainability in general.
   </details>
 
 ### Defense from attacks on XAI
@@ -157,7 +165,9 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ...
 
-## Further Related
+...
+
+## Further related
 
 ### Attacks on AI using XAI
 
@@ -166,7 +176,6 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary>R. Shokri et al. <em>arXiv preprint v5</em> 2020 </summary>
   Privacy and transparency are two key elements of trustworthy machine learning. Model explanations can provide more insight into a model's decisions on input data. This, however, can impose a significant privacy risk to the model's training set. We analyze whether an adversary can exploit model explanations to infer sensitive information about the model's training set. We investigate this research problem primarily using membership inference attacks: inferring whether a data point belongs to the training set of a model given its explanations. We study this problem for three popular types of model explanations: backpropagation-based, perturbation-based and example-based attribution methods. We devise membership inference attacks based on these model explanations, and extensively test them on a variety of datasets. We show that both backpropagation- and example-based explanations can leak a significant amount of information about individual data points in the training set. More importantly, we design reconstruction attacks against example-based model explanations, and use them to recover significant parts of the training set. Finally, we discuss the resistance of perturbation-based attribution methods to existing attack models; interestingly, their resistance to such attacks is related to a crucial shortcoming of such model explanations uncovered by recent works.
   </details>
-* *Contributions are welcome*
 
 ### Defense from attacks on AI using XAI
 
