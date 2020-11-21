@@ -6,7 +6,7 @@ A curated list of Adversarial Explainable AI (XAI) resources, inspired by
 Due to the novelty of the field, this list is very much in the making. Contributions are welcome - send a pull request
 or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.com).
 
-<p align="center"><img src="fig/aiml.png"></p>
+<p align="center"><img src="fig/preview.png"></p>
 
 There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, **attacks on model explanations** come to light, so does the **defense** to such adversary.
 
