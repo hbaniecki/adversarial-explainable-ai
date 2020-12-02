@@ -69,7 +69,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Explanations can be manipulated and geometry is to blame](https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame#:~:text=pdf)
   <details open>
-  <summary>A. K. Dombrowski et al. <em>Advances in Neural Information Processing System</em> 2019 </summary>
+  <summary>A. K. Dombrowski et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
     Explanation methods aim to make neural networks more trustworthy and interpretable. In this paper, we demonstrate a property of explanation methods which is disconcerting for both of these purposes. Namely, we show that explanations can be manipulated arbitrarily by applying visually hardly perceptible perturbations to the input that keep the network's output approximately constant. We establish theoretically that this phenomenon can be related to certain geometrical properties of neural networks. This allows us to derive an upper bound on the susceptibility of explanations to manipulations. Based on this result, we propose effective mechanisms to enhance the robustness of explanations.
   </details>
   <p align="center"><img height='500' src="fig/attack.png"></p>
