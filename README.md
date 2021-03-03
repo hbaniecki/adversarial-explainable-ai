@@ -6,7 +6,11 @@ A curated list of Adversarial Explainable AI (XAI) resources, inspired by
 Due to the novelty of the field, this list is very much in the making. Contributions are welcome - send a pull request
 or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.com).
 
-<p align="center"><img src="fig/preview.png"></p>
+<p align="center">
+  <a href="https://medium.com/responsibleml/adversarial-attacks-on-explainable-ai-f65d41e83c5f">
+    <img src="fig/preview.png">
+  </a>
+</p>
 
 There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, **attacks on model explanations** come to light, so does the **defense** to such adversary.
 
@@ -18,30 +22,35 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 * [Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)
   <details>
-  <summary> A. Barredo-Arrieta et al. <em>Information Fusion</em> 2019 </summary>
+  <summary> A. Barredo-Arrieta et al. 
+      <em>Information Fusion</em> 2019 </summary>
     In the last few years, Artificial Intelligence (AI) has achieved a notable momentum that, if harnessed appropriately, may deliver the best of expectations over many application sectors across the field. For this to occur shortly in Machine Learning, the entire community stands in front of the barrier of explainability, an inherent problem of the latest techniques brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were not present in the last hype of AI (namely, expert systems and rule based models). Paradigms underlying this problem fall within the so-called eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature for the practical deployment of AI models. The overview presented in this article examines the existing literature and contributions already done in the field of XAI, including a prospect toward what is yet to be reached. For this purpose we summarize previous efforts made to define explainability in Machine Learning, establishing a novel definition of explainable Machine Learning that covers such prior conceptual propositions with a major focus on the audience for which the explainability is sought. Departing from this definition, we propose and discuss about a taxonomy of recent contributions related to the explainability of different Machine Learning models, including those aimed at explaining Deep Learning methods for which a second dedicated taxonomy is built and examined in detail. This critical literature analysis serves as the motivating background for a series of challenges faced by XAI, such as the interesting crossroads of data fusion and explainability. Our prospects lead toward the concept of Responsible Artificial Intelligence, namely, a methodology for the large-scale implementation of AI methods in real organizations with fairness, model explainability and accountability at its core. Our ultimate goal is to provide newcomers to the field of XAI with a thorough taxonomy that can serve as reference material in order to stimulate future research advances, but also to encourage experts and professionals from other disciplines to embrace the benefits of AI in their activity sectors, without any prior bias for its lack of interpretability.
   </details>
 
 **General**
 
-* [Towards Robust Interpretability with Self-Explaining Neural Networks](https://papers.nips.cc/paper/8003-towards-robust-interpretability-with-self-explaining-neural-networks#:~:text=pdf)
+* [Towards Robust Interpretability with Self-Explaining Neural Networks](https://papers.nips.cc/paper/8003-towards-robust-interpretability-with-self-explaining-neural-networks#:~:text=paper)
   <details>
-  <summary> D. A. Melis & T. Jaakkola <em>Advances in Neural Information Processing Systems</em> 2018 </summary>
+  <summary> D. Alvarez-Melis & T. Jaakkola 
+      <em>Advances in Neural Information Processing Systems</em> 2018 </summary>
     Most recent work on interpretability of complex machine learning models has focused on estimating a-posteriori explanations for previously trained models around specific predictions. Self-explaining models where interpretability plays a key role already during learning have received much less attention. We propose three desiderata for explanations in general -- explicitness, faithfulness, and stability -- and show that existing methods do not satisfy them. In response, we design self-explaining models in stages, progressively generalizing linear classifiers to complex yet architecturally explicit models. Faithfulness and stability are enforced via regularization specifically tailored to such models. Experimental results across various benchmark datasets show that our framework offers a promising direction for reconciling model complexity and interpretability.
   </details>
-* [Sanity Checks for Saliency Maps](https://papers.nips.cc/paper/8160-sanity-checks-for-saliency-maps#:~:text=pdf#:~:text=pdf)
+* [Sanity Checks for Saliency Maps](https://papers.nips.cc/paper/8160-sanity-checks-for-saliency-maps#:~:text=pdf#:~:text=paper)
   <details>
-  <summary> J. Adebayo et al. <em>Advances in Neural Information Processing Systems</em> 2018 </summary>
+  <summary> J. Adebayo et al. 
+      <em>Advances in Neural Information Processing Systems</em> 2018 </summary>
     Saliency methods have emerged as a popular tool to highlight features in an input deemed relevant for the prediction of a learned model. Several saliency methods have been proposed, often guided by visual appeal on image data. In this work, we propose an actionable methodology to evaluate what kinds of explanations a given method can and cannot provide. We find that reliance, solely, on visual assessment can be misleading. Through extensive experiments we show that some existing saliency methods are independent both of the model and of the data generating process. Consequently, methods that fail the proposed tests are inadequate for tasks that are sensitive to either data or model, such as, finding outliers in the data, explaining the relationship between inputs and outputs that the model learned, and debugging the model. We interpret our findings through an analogy with edge detection in images, a technique that requires neither training data nor model. Theory in the case of a linear model and a single-layer convolutional neural network supports our experimental findings.
   </details>
-* [On Relating Explanations and Adversarial Examples](https://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples#:~:text=pdf)
+* [On Relating Explanations and Adversarial Examples](https://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples#:~:text=paper)
   <details>
-  <summary> A. Ignatiev et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
+  <summary> A. Ignatiev et al. 
+      <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
     The importance of explanations (XP's) of machine learning (ML) model predictions and of adversarial examples (AE's) cannot be overstated, with both arguably being essential for the practical success of ML in different settings. There has been recent work on understanding and assessing the relationship between XP's and AE's. However, such work has been mostly experimental and a sound theoretical relationship has been elusive. This paper demonstrates that explanations and adversarial examples are related by a generalized form of hitting set duality, which extends earlier work on hitting set duality observed in model-based diagnosis and knowledge compilation. Furthermore, the paper proposes algorithms, which enable computing adversarial examples from explanations and vice-versa.
   </details>
 * [Robustness in Machine Learning Explanations: Does It Matter?](https://www.dropbox.com/s/u4kwdk9m5o2u2sb/preprint.pdf)
   <details>
-  <summary> H. L. Leif <em>Conference on Fairness, Accountability, and Transparency</em> 2020 </summary>
+  <summary> L. Hancox-Li 
+      <em>Conference on Fairness, Accountability, and Transparency</em> 2020 </summary>
     The explainable AI literature contains multiple notions of what an explanation is and what desiderata explanations should satisfy. One implicit source of disagreement is how far the explanations should reflect real patterns in the data or the world. This disagreement underlies debates about other desiderata, such as how robust explanations are to slight perturbations in the input data. I argue that robustness is desirable to the extent that we’re concerned about finding real patterns in the world. The import of real patterns differs according to the problem context. In some contexts, non-robust explanations can constitute a moral hazard. By being clear about the extent to which we care about capturing real patterns, we can also determine whether the Rashomon Effect is a boon or a bane.
   </details>
 
@@ -49,27 +58,32 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 * [Interpretation of Neural Networks Is Fragile](https://www.aaai.org/ojs/index.php/AAAI/article/view/4252#:~:text=pdf)
   <details>
-  <summary> A. Ghorbani et al. <em>AAAI Conference on Artificial Intelligence</em> 2019 </summary>
+  <summary> A. Ghorbani et al. 
+      <em>AAAI Conference on Artificial Intelligence</em> 2019 </summary>
     In order for machine learning to be trusted in many applications, it is critical to be able to reliably explain why the machine learning algorithm makes certain predictions. For this reason, a variety of methods have been developed recently to interpret neural network predictions by providing, for example, feature importance maps. For both scientific robustness and security reasons, it is important to know to what extent can the interpretations be altered by small systematic perturbations to the input data, which might be generated by adversaries or by measurement biases. In this paper, we demonstrate how to generate adversarial perturbations that produce perceptively indistinguishable inputs that are assigned the same predicted label, yet have very different interpretations. We systematically characterize the robustness of interpretations generated by several widely-used feature importance interpretation methods (feature importance maps, integrated gradients, and DeepLIFT) on ImageNet and CIFAR-10. In all cases, our experiments show that systematic perturbations can lead to dramatically different interpretations without changing the label. We extend these results to show that interpretations based on exemplars (e.g. influence functions) are similarly susceptible to adversarial attack. Our analysis of the geometry of the Hessian matrix gives insight on why robustness is a general challenge to current interpretation approaches.
   </details>
 * [Fairwashing: the risk of rationalization](https://proceedings.mlr.press/v97/aivodji19a#:~:text=download%20pdf)
   <details>
-  <summary> U. Aivodji et al. <em>International Conference on Machine Learning</em> 2019 </summary>
+  <summary> U. Aivodji et al. 
+      <em>International Conference on Machine Learning</em> 2019 </summary>
     Black-box explanation is the problem of explaining how a machine learning model – whose internal logic is hidden to the auditor and generally complex – produces its outcomes. Current approaches for solving this problem include model explanation, outcome explanation as well as model inspection. While these techniques can be beneficial by providing interpretability, they can be used in a negative manner to perform fairwashing, which we define as promoting the false perception that a machine learning model respects some ethical values. In particular, we demonstrate that it is possible to systematically rationalize decisions taken by an unfair black-box model using the model explanation as well as the outcome explanation approaches with a given fairness metric. Our solution, LaundryML, is based on a regularized rule list enumeration algorithm whose objective is to search for fair rule lists approximating an unfair black-box model. We empirically evaluate our rationalization technique on black-box models trained on real-world datasets and show that one can obtain rule lists with high fidelity to the black-box model while being considerably less unfair at the same time.
   </details>
 * [The (Un)reliability of Saliency Methods](https://www.researchgate.net/publication/335707891_The_Unreliability_of_Saliency_Methods#:~:text=Public)
   <details>
-  <summary> P. J. Kindermans et al. <em>Explainable AI: Interpreting, Explaining and Visualizing Deep Learning</em> 2019 </summary>
+  <summary> P. J. Kindermans et al. 
+      <em>Explainable AI: Interpreting, Explaining and Visualizing Deep Learning</em> 2019 </summary>
     Saliency methods aim to explain the predictions of deep neural networks. These methods lack reliability when the explanation is sensitive to factors that do not contribute to the model prediction. We use a simple and common pre-processing step which can be compensated for easily—adding a constant shift to the input data—to show that a transformation with no effect on how the model makes the decision can cause numerous methods to attribute incorrectly. In order to guarantee reliability, we believe that the explanation should not change when we can guarantee that two networks process the images in identical manners. We show, through several examples, that saliency methods that do not satisfy this requirement result in misleading attribution. The approach can be seen as a type of unit test; we construct a narrow ground truth to measure one stated desirable property. As such, we hope the community will embrace the development of additional tests.
   </details>
-* [Fooling Neural Network Interpretations via Adversarial Model Manipulation](https://papers.nips.cc/paper/8558-fooling-neural-network-interpretations-via-adversarial-model-manipulation#:~:text=pdf)
+* [Fooling Neural Network Interpretations via Adversarial Model Manipulation](https://papers.nips.cc/paper/8558-fooling-neural-network-interpretations-via-adversarial-model-manipulation#:~:text=paper)
   <details>
-  <summary> J. Heo et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
+  <summary> J. Heo et al. 
+      <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
     We ask whether the neural network interpretation methods can be fooled via adversarial model manipulation, which is defined as a model fine-tuning step that aims to radically alter the explanations without hurting the accuracy of the original models, e.g., VGG19, ResNet50, and DenseNet121. By incorporating the interpretation results directly in the penalty term of the objective function for fine-tuning, we show that the state-of-the-art saliency map based interpreters, e.g., LRP, Grad-CAM, and SimpleGrad, can be easily fooled with our model manipulation. We propose two types of fooling, Passive and Active, and demonstrate such foolings generalize well to the entire validation set as well as transfer to other interpretation methods. Our results are validated by both visually showing the fooled explanations and reporting quantitative metrics that measure the deviations from the original explanations. We claim that the stability of neural network interpretation method with respect to our adversarial model manipulation is an important criterion to check for developing robust and reliable neural network interpretation method.
   </details>
-* [Explanations can be manipulated and geometry is to blame](https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame#:~:text=pdf)
+* [Explanations can be manipulated and geometry is to blame](https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame#:~:text=paper)
   <details open>
-  <summary> A. K. Dombrowski et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
+  <summary> A. K. Dombrowski et al. 
+      <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
     Explanation methods aim to make neural networks more trustworthy and interpretable. In this paper, we demonstrate a property of explanation methods which is disconcerting for both of these purposes. Namely, we show that explanations can be manipulated arbitrarily by applying visually hardly perceptible perturbations to the input that keep the network's output approximately constant. We establish theoretically that this phenomenon can be related to certain geometrical properties of neural networks. This allows us to derive an upper bound on the susceptibility of explanations to manipulations. Based on this result, we propose effective mechanisms to enhance the robustness of explanations.
   </details>
   <p align="center"><img height='500' src="fig/attack.png"></p>
@@ -126,7 +140,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> W. Woods et al. <em>Nature Machine Intelligence</em> 2019 </summary>
     For sensitive problems, such as medical imaging or fraud detection, Neural Network (NN) adoption has been slow due to concerns about their reliability, leading to a number of algorithms for explaining their decisions. NNs have also been found vulnerable to a class of imperceptible attacks, called adversarial examples, which arbitrarily alter the output of the network. Here we demonstrate both that these attacks can invalidate prior attempts to explain the decisions of NNs, and that with very robust networks, the attacks themselves may be leveraged as explanations with greater fidelity to the model. We show that the introduction of a novel regularization technique inspired by the Lipschitz constraint, alongside other proposed improvements, greatly improves an NN's resistance to adversarial examples. On the ImageNet classification task, we demonstrate a network with an Accuracy-Robustness Area (ARA) of 0.0053, an ARA 2.4x greater than the previous state of the art. Improving the mechanisms by which NN decisions are understood is an important direction for both establishing trust in sensitive domains and learning more about the stimuli to which NNs respond.
   </details>
-* [On the (In)fidelity and Sensitivity of Explanations](https://papers.nips.cc/paper/9278-on-the-infidelity-and-sensitivity-of-explanations#:~:text=pdf)
+* [On the (In)fidelity and Sensitivity of Explanations](https://papers.nips.cc/paper/9278-on-the-infidelity-and-sensitivity-of-explanations#:~:text=paper)
   <details>
   <summary> C. K. Yeh et al. <em>Advances in Neural Information Processing Systems</em> 2019 </summary>
     We consider objective evaluation measures of saliency explanations for complex black-box machine learning models. We propose simple robust variants of two notions that have been considered in recent literature: (in)fidelity, and sensitivity. We analyze optimal explanations with respect to both these measures, and while the optimal explanation for sensitivity is a vacuous constant explanation, the optimal explanation for infidelity is a novel combination of two popular explanation methods. By varying the perturbation distribution that defines infidelity, we obtain novel explanations by optimizing infidelity, which we show to out-perform existing explanations in both quantitative and qualitative measurements. Another salient question given these measures is how to modify any given explanation to have better values with respect to these measures. We propose a simple modification based on lowering sensitivity, and moreover show that when done appropriately, we could simultaneously improve both sensitivity as well as fidelity.
@@ -172,7 +186,8 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Debugging Tests for Model Explanations](https://proceedings.neurips.cc/paper/2020/hash/075b051ec3d22dac7b33f788da631fd4-Abstract.html#:~:text=paper)
   <details>
-  <summary> J. Adebayo et al. <em>Advances in Neural Information Processing Systems</em> 2020 </summary>
+  <summary> <a href="https://scholar.google.com/citations?hl=en&user=y1bnRg4AAAAJ">J. Adebayo</a> et al. 
+      <em>Advances in Neural Information Processing Systems</em> 2020 </summary>
     We investigate whether post-hoc model explanations are effective for diagnosing model errors–model debugging. In response to the challenge of explaining a model’s prediction, a vast array of explanation methods have been proposed. Despite increasing use, it is unclear if they are effective. To start, we categorize bugs, based on their source, into: data, model, and test-time contamination bugs. For several explanation methods, we assess their ability to: detect spurious correlation artifacts (data contamination), diagnose mislabeled training examples (data contamination), differentiate between a (partially) re-initialized model and a trained one (model contamination), and detect out-of-distribution inputs (test-time contamination). We find that the methods tested are able to diagnose a spurious background bug, but not conclusively identify mislabeled training examples. In addition, a class of methods, that modify the back-propagation algorithm are invariant to the higher layer parameters of a deep network; hence, ineffective for diagnosing model contamination. We complement our analysis with a human subject study, and find that subjects fail to identify defective models using attributions, but instead rely, primarily, on model predictions. Taken together, our results provide guidance for practitioners and researchers turning to explanations as tools for model debugging.
   </details>
 * [Can We Trust Your Explanations? Sanity Checks for Interpreters in Android Malware Analysis](https://arxiv.org/abs/2008.05895v1#:~:text=pdf)
