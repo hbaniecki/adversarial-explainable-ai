@@ -26,6 +26,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>Information Fusion</em> 2019 </summary>
     In the last few years, Artificial Intelligence (AI) has achieved a notable momentum that, if harnessed appropriately, may deliver the best of expectations over many application sectors across the field. For this to occur shortly in Machine Learning, the entire community stands in front of the barrier of explainability, an inherent problem of the latest techniques brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were not present in the last hype of AI (namely, expert systems and rule based models). Paradigms underlying this problem fall within the so-called eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature for the practical deployment of AI models. The overview presented in this article examines the existing literature and contributions already done in the field of XAI, including a prospect toward what is yet to be reached. For this purpose we summarize previous efforts made to define explainability in Machine Learning, establishing a novel definition of explainable Machine Learning that covers such prior conceptual propositions with a major focus on the audience for which the explainability is sought. Departing from this definition, we propose and discuss about a taxonomy of recent contributions related to the explainability of different Machine Learning models, including those aimed at explaining Deep Learning methods for which a second dedicated taxonomy is built and examined in detail. This critical literature analysis serves as the motivating background for a series of challenges faced by XAI, such as the interesting crossroads of data fusion and explainability. Our prospects lead toward the concept of Responsible Artificial Intelligence, namely, a methodology for the large-scale implementation of AI methods in real organizations with fairness, model explainability and accountability at its core. Our ultimate goal is to provide newcomers to the field of XAI with a thorough taxonomy that can serve as reference material in order to stimulate future research advances, but also to encourage experts and professionals from other disciplines to embrace the benefits of AI in their activity sectors, without any prior bias for its lack of interpretability.
   </details>
+* [Notions of explainability and evaluation approaches for explainable artificial intelligence](https://doi.org/10.1016/j.inffus.2021.05.009)
+  <details>
+  <summary> G. Vilone & L. Longo  
+      <em>Information Fusion</em> 2021 </summary>
+    Explainable Artificial Intelligence (XAI) has experienced a significant growth over the last few years. This is due to the widespread application of machine learning, particularly deep learning, that has led to the development of highly accurate models that lack explainability and interpretability. A plethora of methods to tackle this problem have been proposed, developed and tested, coupled with several studies attempting to define the concept of explainability and its evaluation. This systematic review contributes to the body of knowledge by clustering all the scientific studies via a hierarchical system that classifies theories and notions related to the concept of explainability and the evaluation approaches for XAI methods. The structure of this hierarchy builds on top of an exhaustive analysis of existing taxonomies and peer-reviewed scientific material. Findings suggest that scholars have identified numerous notions and requirements that an explanation should meet in order to be easily understandable by end-users and to provide actionable information that can inform decision making. They have also suggested various approaches to assess to what degree machine-generated explanations meet these demands. Overall, these approaches can be clustered into human-centred evaluations and evaluations with more objective metrics. However, despite the vast body of knowledge developed around the concept of explainability, there is not a general consensus among scholars on how an explanation should be defined, and how its validity and reliability assessed. Eventually, this review concludes by critically discussing these gaps and limitations, and it defines future research directions with explainability as the starting component of any artificial intelligent system.
+  </details>
 
 **General**
 
@@ -167,7 +173,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
     Despite a growing literature on explaining neural networks, no consensus has been reached on how to explain a neural network decision or how to evaluate an explanation. Our contributions in this paper are twofold. First, we investigate schemes to combine explanation methods and reduce model uncertainty to obtain a single aggregated explanation. We provide evidence that the aggregation is better at identifying important features, than on individual methods. Adversarial attacks on explanations is a recent active research topic. As our second contribution, we present evidence that aggregate explanations are much more robust to attacks than individual explanation methods.
   </details>
 
-### Other
+### Evaluations
 
 * [A Benchmark for Interpretability Methods in Deep Neural Networks](https://papers.neurips.cc/paper/9167-a-benchmark-for-interpretability-methods-in-deep-neural-networkss#:~:text=pdf)
   <details>
@@ -192,15 +198,19 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Can We Trust Your Explanations? Sanity Checks for Interpreters in Android Malware Analysis](https://arxiv.org/abs/2008.05895v1#:~:text=pdf)
   <details>
-  <summary> M. Fan et al. <em>arXiv preprint v1</em> 2020 </summary>
+  <summary> M. Fan et al. <em>IEEE Transactions on Information Forensics and Security</em> 2020 </summary>
     With the rapid growth of Android malware, many machine learning-based malware analysis approaches are proposed to mitigate the severe phenomenon. However, such classifiers are opaque, non-intuitive, and difficult for analysts to understand the inner decision reason. For this reason, a variety of explanation approaches are proposed to interpret predictions by providing important features. Unfortunately, the explanation results obtained in the malware analysis domain cannot achieve a consensus in general, which makes the analysts confused about whether they can trust such results. In this work, we propose principled guidelines to assess the quality of five explanation approaches by designing three critical quantitative metrics to measure their stability, robustness, and effectiveness. Furthermore, we collect five widely-used malware datasets and apply the explanation approaches on them in two tasks, including malware detection and familial identification. Based on the generated explanation results, we conduct a sanity check of such explanation approaches in terms of the three metrics. The results demonstrate that our metrics can assess the explanation approaches and help us obtain the knowledge of most typical malicious behaviors for malware analysis.
+  </details>
+* [Do Feature Attribution Methods Correctly Attribute Features?](https://arxiv.org/abs/2104.14403v1#:~:text=pdf)
+  <details>
+  <summary> Y. Zhou et al. <em>arXiv preprint v1</em> 2021 </summary>
+    Feature attribution methods are exceedingly popular in interpretable machine learning. They aim to compute the attribution of each input feature to represent its importance, but there is no consensus on the definition of "attribution", leading to many competing methods with little systematic evaluation. The lack of attribution ground truth further complicates evaluation, which has to rely on proxy metrics. To address this, we propose a dataset modification procedure such that models trained on the new dataset have ground truth attribution available. We evaluate three methods: saliency maps, rationales, and attention. We identify their deficiencies and add a new perspective to the growing body of evidence questioning their correctness and reliability in the wild. Our evaluation approach is model-agnostic and can be used to assess future feature attribution method proposals as well. Code is available at https://github.com/YilunZhou/feature-attribution-evaluation.
   </details>
 
 ## Software
 
 ...
 
-...
 
 ## Further related
 
