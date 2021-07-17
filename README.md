@@ -1,6 +1,6 @@
 # Adversarial Explainable AI
 
-A curated list of Adversarial Explainable AI (XAI) resources, inspired by
+A curated list of Adversarial Explainable AI (A-XAI) resources, inspired by
 [awesome-adversarial-machine-learning](https://github.com/yenchenlin/awesome-adversarial-machine-learning) and
 [awesome-interpretable-machine-learning](https://github.com/lopusz/awesome-interpretable-machine-learning).
 Due to the novelty of the field, this list is very much in the making. Contributions are welcome - send a pull request
@@ -202,12 +202,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
     With the rapid growth of Android malware, many machine learning-based malware analysis approaches are proposed to mitigate the severe phenomenon. However, such classifiers are opaque, non-intuitive, and difficult for analysts to understand the inner decision reason. For this reason, a variety of explanation approaches are proposed to interpret predictions by providing important features. Unfortunately, the explanation results obtained in the malware analysis domain cannot achieve a consensus in general, which makes the analysts confused about whether they can trust such results. In this work, we propose principled guidelines to assess the quality of five explanation approaches by designing three critical quantitative metrics to measure their stability, robustness, and effectiveness. Furthermore, we collect five widely-used malware datasets and apply the explanation approaches on them in two tasks, including malware detection and familial identification. Based on the generated explanation results, we conduct a sanity check of such explanation approaches in terms of the three metrics. The results demonstrate that our metrics can assess the explanation approaches and help us obtain the knowledge of most typical malicious behaviors for malware analysis.
   </details>
 * [Evaluation of Saliency-based Explainability Method](https://arxiv.org/abs/2106.12773#:~:text=pdf)
-  <details open>
+  <details>
   <summary> S. Sunder-Samuel et al.  <em>ICML Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI</em> 2021 </summary>
     A particular class of Explainable AI (XAI) methods provide saliency maps to highlight part of the image a Convolutional Neural Network (CNN) model looks at to classify the image as a way to explain its working. These methods provide an intuitive way for users to understand predictions made by CNNs. Other than quantitative computational tests, the vast majority of evidence to highlight that the methods are valuable is anecdotal. Given that humans would be the end-users of such methods, we devise three human subject experiments through which we gauge the effectiveness of these saliency-based explainability methods.
   </details>
 * [Order in the Court: Explainable AI Methods Prone to Disagreement](https://arxiv.org/abs/2105.03287#:~:text=pdf)
-  <details open>
+  <details>
   <summary> M. Neely et al. <em>ICML Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI</em> 2021 </summary>
     By computing the rank correlation between attention weights and feature-additive explanation methods, previous analyses either invalidate or support the role of attention-based explanations as a faithful and plausible measure of salience. To investigate whether this approach is appropriate, we compare LIME, Integrated Gradients, DeepLIFT, Grad-SHAP, Deep-SHAP, and attention-based explanations, applied to two neural architectures trained on single- and pair-sequence language tasks. In most cases, we find that none of our chosen methods agree. Based on our empirical observations and theoretical objections, we conclude that rank correlation does not measure the quality of feature-additive methods. Practitioners should instead use the numerous and rigorous diagnostic methods proposed by the community.
   </details>
