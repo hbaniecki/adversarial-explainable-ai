@@ -16,6 +16,17 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 <p align="center"> <em>Veritas Vincit</em> </p>
 
+## Conferences
+
+* [AAAI/ACM Conference on AI, Ethics, and Society (AIES)](https://www.aies-conference.com)
+* [ACM Conference on Fairness, Accountability, and Transparency (FAccT)](https://facctconference.org/)
+
+## Workshops 
+
+* ICML 2020 Workshop on Human Interpretability in Machine Learning (ICML WHI) [website](https://sites.google.com/view/whi2020)
+* ICLR 2021 Workshop on Responsible AI (ICLR RAI) [website](https://iclr.cc/virtual/2021/workshop/2132)
+* ICML 2021 Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI (ICML XAI) [website](https://icml2021-xai.github.io) [proceedings](https://arxiv.org/html/2107.08821)
+
 ## Papers
 
 **Introduction**
@@ -153,7 +164,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [A simple defense against adversarial attacks on heatmap explanations](https://arxiv.org/abs/2007.06381#:~:text=pdf)
   <details open>
-  <summary> L. Rieger & L. K. Hansen <em>ICML Workshop on Human Interpretability in Machine Learning (ICML WHI)</em> 2020 </summary>
+  <summary> L. Rieger & L. K. Hansen <em>Workshop on Human Interpretability in Machine Learning (ICML WHI)</em> 2020 </summary>
     With machine learning models being used for more sensitive applications, we rely on interpretability methods to prove that no discriminating attributes were used for classification. A potential concern is the so-called "fair-washing" - manipulating a model such that the features used in reality are hidden and more innocuous features are shown to be important instead. In our work we present an effective defence against such adversarial attacks on neural networks. By a simple aggregation of multiple explanation methods, the network becomes robust against manipulation. This holds even when the attacker has exact knowledge of the model weights and the explanation methods used.
   </details>
   <p align="center"><img height='500' src="fig/defense.png"></p>
@@ -203,12 +214,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Evaluation of Saliency-based Explainability Method](https://arxiv.org/abs/2106.12773#:~:text=pdf)
   <details>
-  <summary> S-Z. Sunder-Samuel et al.  <em>ICML Workshop on Theoretic Foundation, Criticism, and Application Trend of XAI</em> 2021 </summary>
+  <summary> S-Z. Sunder-Samuel et al.  <em>Workshop on Theoretic Foundation, Criticism, and Application Trend of XAI (ICML XAI)</em> 2021 </summary>
     A particular class of Explainable AI (XAI) methods provide saliency maps to highlight part of the image a Convolutional Neural Network (CNN) model looks at to classify the image as a way to explain its working. These methods provide an intuitive way for users to understand predictions made by CNNs. Other than quantitative computational tests, the vast majority of evidence to highlight that the methods are valuable is anecdotal. Given that humans would be the end-users of such methods, we devise three human subject experiments through which we gauge the effectiveness of these saliency-based explainability methods.
   </details>
 * [Order in the Court: Explainable AI Methods Prone to Disagreement](https://arxiv.org/abs/2105.03287#:~:text=pdf)
   <details>
-  <summary> M. Neely et al. <em>ICML Workshop on Theoretic Foundation, Criticism, and Application Trend of XAI</em> 2021 </summary>
+  <summary> M. Neely et al. <em>Workshop on Theoretic Foundation, Criticism, and Application Trend of XAI (ICML XAI)</em> 2021 </summary>
     By computing the rank correlation between attention weights and feature-additive explanation methods, previous analyses either invalidate or support the role of attention-based explanations as a faithful and plausible measure of salience. To investigate whether this approach is appropriate, we compare LIME, Integrated Gradients, DeepLIFT, Grad-SHAP, Deep-SHAP, and attention-based explanations, applied to two neural architectures trained on single- and pair-sequence language tasks. In most cases, we find that none of our chosen methods agree. Based on our empirical observations and theoretical objections, we conclude that rank correlation does not measure the quality of feature-additive methods. Practitioners should instead use the numerous and rigorous diagnostic methods proposed by the community.
   </details>
 * [Do Feature Attribution Methods Correctly Attribute Features?](https://arxiv.org/abs/2104.14403v1#:~:text=pdf)
@@ -216,11 +227,11 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> Y. Zhou et al. <em>arXiv preprint arXiv:2104.14403v1</em> 2021 </summary>
     Feature attribution methods are exceedingly popular in interpretable machine learning. They aim to compute the attribution of each input feature to represent its importance, but there is no consensus on the definition of "attribution", leading to many competing methods with little systematic evaluation. The lack of attribution ground truth further complicates evaluation, which has to rely on proxy metrics. To address this, we propose a dataset modification procedure such that models trained on the new dataset have ground truth attribution available. We evaluate three methods: saliency maps, rationales, and attention. We identify their deficiencies and add a new perspective to the growing body of evidence questioning their correctness and reliability in the wild. Our evaluation approach is model-agnostic and can be used to assess future feature attribution method proposals as well. Code is available at https://github.com/YilunZhou/feature-attribution-evaluation.
   </details>
-
-## Software
-
-...
-
+* [Counterfactual Explanations Can Be Manipulated](https://arxiv.org/abs/2106.02666v1#:~:text=pdf)
+  <details>
+  <summary> D. Slack et al. <em>arXiv preprint arXiv:2106.02666v1</em> 2021 </summary>
+    Counterfactual explanations are emerging as an attractive option for providing recourse to individuals adversely impacted by algorithmic decisions. As they are deployed in critical applications (e.g. law enforcement, financial lending), it becomes important to ensure that we clearly understand the vulnerabilities of these methods and find ways to address them. However, there is little understanding of the vulnerabilities and shortcomings of counterfactual explanations. In this work, we introduce the first framework that describes the vulnerabilities of counterfactual explanations and shows how they can be manipulated. More specifically, we show counterfactual explanations may converge to drastically different counterfactuals under a small perturbation indicating they are not robust. Leveraging this insight, we introduce a novel objective to train seemingly fair models where counterfactual explanations find much lower cost recourse under a slight perturbation. We describe how these models can unfairly provide low-cost recourse for specific subgroups in the data while appearing fair to auditors. We perform experiments on loan and violent crime prediction data sets where certain subgroups achieve up to 20x lower cost recourse under the perturbation. These results raise concerns regarding the dependability of current counterfactual explanation techniques, which we hope will inspire investigations in robust counterfactual explanations.
+  </details>
 
 ## Further related
 
@@ -244,4 +255,9 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> Z. Klawikowska et al. <em>International Conference on Artificial Intelligence and Soft Computing (ICAISC)</em> 2020 </summary>
     Deep Neural Networks (DNN) are state of the art algorithms for image classification. Although significant achievements and perspectives, deep neural networks and accompanying learning algorithms have some important challenges to tackle. However, it appears that it is relatively easy to attack and fool with well-designed input samples called adversarial examples. Adversarial perturbations are unnoticeable for humans. Such attacks are a severe threat to the development of these systems in critical applications, such as medical or military systems. Hence, it is necessary to develop methods of counteracting these attacks. These methods are called defense strategies and aim at increasing the neural model’s robustness against adversarial attacks. In this paper, we reviewed the recent findings in adversarial attacks and defense strategies. We also analyzed the effects of attacks and defense strategies applied, using the local and global analyzing methods from the family of explainable artificial intelligence.
   </details>
-* *Contributions are welcome*
+
+## Software
+
+...
+
+<p align="center"> <em>Contributions are welcome</em> </p>
