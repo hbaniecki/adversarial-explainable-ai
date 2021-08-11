@@ -235,16 +235,6 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Further related
 
-### Attacks on AI using XAI
-
-* [On the Privacy Risks of Model Explanations](https://www.comp.nus.edu.sg/~reza/files/Shokri-AIES2021.pdf)
-  <details>
-  <summary> R. Shokri et al. <em>AAAI/ACM Conference on AI, Ethics, and Society (AIES)</em> 2021 </summary>
-    Privacy and transparency are two key foundations of trustworthy machine learning. Model explanations offer insights into a model’s decisions on input data, whereas privacy is primarily concerned with protecting information about the training data. We analyze connections between model explanations and the leakage of sensitive information about the model’s training set. We investigate the privacy risks of feature-based model explanations using membership inference attacks: quantifying how much model predictions plus their explanations leak information about the presence of a datapoint in the training set of a model. We extensively evaluate membership inference attacks based on feature-based model explanations, over a variety of datasets. We show that backpropagation-based explanations can leak a significant amount of information about individual training datapoints. This is because they reveal statistical information about the decision boundaries of the model about an input, which can reveal its membership. We also empirically investigate the trade-off between privacy and explanation quality, by studying the perturbation-based model explanations.
-  </details>
-
-### Defense from attacks on AI using XAI
-
 * [When Explainability Meets Adversarial Learning: Detecting Adversarial Examples using SHAP Signatures](https://arxiv.org/abs/1909.03418#:~:text=pdf)
   <details>
   <summary> G. Fidel et al. <em>International Joint Conference on Neural Networks (IJCNN)</em> 2020 </summary>
@@ -255,6 +245,17 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> Z. Klawikowska et al. <em>International Conference on Artificial Intelligence and Soft Computing (ICAISC)</em> 2020 </summary>
     Deep Neural Networks (DNN) are state of the art algorithms for image classification. Although significant achievements and perspectives, deep neural networks and accompanying learning algorithms have some important challenges to tackle. However, it appears that it is relatively easy to attack and fool with well-designed input samples called adversarial examples. Adversarial perturbations are unnoticeable for humans. Such attacks are a severe threat to the development of these systems in critical applications, such as medical or military systems. Hence, it is necessary to develop methods of counteracting these attacks. These methods are called defense strategies and aim at increasing the neural model’s robustness against adversarial attacks. In this paper, we reviewed the recent findings in adversarial attacks and defense strategies. We also analyzed the effects of attacks and defense strategies applied, using the local and global analyzing methods from the family of explainable artificial intelligence.
   </details>
+* [The role of explainability in creating trustworthy artificial intelligence for health care: A comprehensive survey of the terminology, design choices, and evaluation strategies](https://www.sciencedirect.com/science/article/pii/S1532046420302835)
+  <details>
+  <summary> A. F. Markus et al. <em>Journal of Biomedical Informatics</em> 2021 </summary>
+    Artificial intelligence (AI) has huge potential to improve the health and well-being of people, but adoption in clinical practice is still limited. Lack of transparency is identified as one of the main barriers to implementation, as clinicians should be confident the AI system can be trusted. Explainable AI has the potential to overcome this issue and can be a step towards trustworthy AI. In this paper we review the recent literature to provide guidance to researchers and practitioners on the design of explainable AI systems for the health-care domain and contribute to formalization of the field of explainable AI. We argue the reason to demand explainability determines what should be explained as this determines the relative importance of the properties of explainability (i.e. interpretability and fidelity). Based on this, we propose a framework to guide the choice between classes of explainable AI methods (explainable modelling versus post-hoc explanation; model-based, attribution-based, or example-based explanations; global and local explanations). Furthermore, we find that quantitative evaluation metrics, which are important for objective standardized evaluation, are still lacking for some properties (e.g. clarity) and types of explanations (e.g. example-based methods). We conclude that explainable modelling can contribute to trustworthy AI, but the benefits of explainability still need to be proven in practice and complementary measures might be needed to create trustworthy AI in health care (e.g. reporting data quality, performing extensive (external) validation, and regulation).
+  </details>
+* [On the Privacy Risks of Model Explanations](https://www.comp.nus.edu.sg/~reza/files/Shokri-AIES2021.pdf)
+  <details>
+  <summary> R. Shokri et al. <em>AAAI/ACM Conference on AI, Ethics, and Society (AIES)</em> 2021 </summary>
+    Privacy and transparency are two key foundations of trustworthy machine learning. Model explanations offer insights into a model’s decisions on input data, whereas privacy is primarily concerned with protecting information about the training data. We analyze connections between model explanations and the leakage of sensitive information about the model’s training set. We investigate the privacy risks of feature-based model explanations using membership inference attacks: quantifying how much model predictions plus their explanations leak information about the presence of a datapoint in the training set of a model. We extensively evaluate membership inference attacks based on feature-based model explanations, over a variety of datasets. We show that backpropagation-based explanations can leak a significant amount of information about individual training datapoints. This is because they reveal statistical information about the decision boundaries of the model about an input, which can reveal its membership. We also empirically investigate the trade-off between privacy and explanation quality, by studying the perturbation-based model explanations.
+  </details>
+
 
 ## Software
 
