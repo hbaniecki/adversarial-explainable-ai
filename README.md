@@ -25,7 +25,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 * ICML 2020 Workshop on Human Interpretability in Machine Learning (ICML WHI) [[website]](https://sites.google.com/view/whi2020)
 * ICLR 2021 Workshop on Responsible AI (ICLR RAI) [[website]](https://iclr.cc/virtual/2021/workshop/2132)
-* ICML 2021 <sub><sup> Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI </sup></sub> (ICML XAI) [[website]](https://icml2021-xai.github.io) [[proceedings]](https://arxiv.org/html/2107.08821)
+* ICML 2021 Workshop on <sub><sup> Theoretic Foundation, Criticism, and Application Trend of</sup></sub> Explainable AI (ICML XAI) [[website]](https://icml2021-xai.github.io) [[proceedings]](https://arxiv.org/html/2107.08821)
 
 ## Papers
 
@@ -219,12 +219,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Evaluation of Saliency-based Explainability Method](https://arxiv.org/abs/2106.12773#:~:text=pdf)
   <details>
-  <summary> S-Z. Sunder-Samuel et al.  <em><sub><sup>Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI</sup></sub> (ICML XAI)</em> 2021 </summary>
+  <summary> S-Z. Sunder-Samuel et al.  Workshop on <em><sub><sup>Theoretic Foundation, Criticism, and Application Trend of</sup></sub> Explainable AI (ICML XAI)</em> 2021 </summary>
     A particular class of Explainable AI (XAI) methods provide saliency maps to highlight part of the image a Convolutional Neural Network (CNN) model looks at to classify the image as a way to explain its working. These methods provide an intuitive way for users to understand predictions made by CNNs. Other than quantitative computational tests, the vast majority of evidence to highlight that the methods are valuable is anecdotal. Given that humans would be the end-users of such methods, we devise three human subject experiments through which we gauge the effectiveness of these saliency-based explainability methods.
   </details>
 * [Order in the Court: Explainable AI Methods Prone to Disagreement](https://arxiv.org/abs/2105.03287#:~:text=pdf)
   <details>
-  <summary> M. Neely et al. <em><sub><sup>Workshop on Theoretic Foundation, Criticism, and Application Trend of Explainable AI</sup></sub> (ICML XAI)</em> 2021 </summary>
+  <summary> M. Neely et al. Workshop on <em><sub><sup>Theoretic Foundation, Criticism, and Application Trend of</sup></sub> Explainable AI (ICML XAI)</em> 2021 </summary>
     By computing the rank correlation between attention weights and feature-additive explanation methods, previous analyses either invalidate or support the role of attention-based explanations as a faithful and plausible measure of salience. To investigate whether this approach is appropriate, we compare LIME, Integrated Gradients, DeepLIFT, Grad-SHAP, Deep-SHAP, and attention-based explanations, applied to two neural architectures trained on single- and pair-sequence language tasks. In most cases, we find that none of our chosen methods agree. Based on our empirical observations and theoretical objections, we conclude that rank correlation does not measure the quality of feature-additive methods. Practitioners should instead use the numerous and rigorous diagnostic methods proposed by the community.
   </details>
 * [Do Feature Attribution Methods Correctly Attribute Features?](https://arxiv.org/abs/2104.14403v1#:~:text=pdf)
