@@ -29,7 +29,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Software
 
-* Captum ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://github.com/pytorch/captum) with implemented [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
+* Captum ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
 
 ## Papers
 
