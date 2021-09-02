@@ -27,6 +27,10 @@ There are various adversarial attacks on machine learning models; hence, ways of
 * ICLR 2021 Workshop on Responsible AI (ICLR RAI) [[website]](https://iclr.cc/virtual/2021/workshop/2132)
 * ICML 2021 Workshop on <sub><sup> Theoretic Foundation, Criticism, and Application Trend of</sup></sub> Explainable AI (ICML XAI) [[website]](https://icml2021-xai.github.io) [[proceedings]](https://arxiv.org/html/2107.08821)
 
+## Software
+
+* Captum ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://github.com/pytorch/captum) with implemented [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
+
 ## Papers
 
 **Introduction**
@@ -44,8 +48,15 @@ There are various adversarial attacks on machine learning models; hence, ways of
     Explainable Artificial Intelligence (XAI) has experienced a significant growth over the last few years. This is due to the widespread application of machine learning, particularly deep learning, that has led to the development of highly accurate models that lack explainability and interpretability. A plethora of methods to tackle this problem have been proposed, developed and tested, coupled with several studies attempting to define the concept of explainability and its evaluation. This systematic review contributes to the body of knowledge by clustering all the scientific studies via a hierarchical system that classifies theories and notions related to the concept of explainability and the evaluation approaches for XAI methods. The structure of this hierarchy builds on top of an exhaustive analysis of existing taxonomies and peer-reviewed scientific material. Findings suggest that scholars have identified numerous notions and requirements that an explanation should meet in order to be easily understandable by end-users and to provide actionable information that can inform decision making. They have also suggested various approaches to assess to what degree machine-generated explanations meet these demands. Overall, these approaches can be clustered into human-centred evaluations and evaluations with more objective metrics. However, despite the vast body of knowledge developed around the concept of explainability, there is not a general consensus among scholars on how an explanation should be defined, and how its validity and reliability assessed. Eventually, this review concludes by critically discussing these gaps and limitations, and it defines future research directions with explainability as the starting component of any artificial intelligent system.
   </details>
 
-**General**
+**Background**
 
+* [Towards better understanding of gradient-based attribution methods for Deep Neural Networks](https://openreview.net/forum?id=Sy21R9JAW)
+  <details>
+  <summary> M. Ancona et al.
+      <em>International Conference on Learning Representations (ICLR)</em> 2018 </summary>
+    Understanding the flow of information in Deep Neural Networks (DNNs) is a challenging problem that has gain increasing attention over the last few years. While several methods have been proposed to explain network predictions, there have been only a few attempts to compare them from a theoretical perspective. What is more, no exhaustive empirical comparison has been performed in the past. In this work we analyze four gradient-based attribution methods and formally prove conditions of equivalence and approximation between them. By reformulating two of these methods, we construct a unified framework which enables a direct comparison, as well as an easier implementation. Finally, we propose a novel evaluation metric, called Sensitivity-n and test the gradient-based attribution methods alongside with a simple perturbation-based attribution method on several datasets in the domains of image and text classification, using various network architectures.
+  </details>
+  
 * [Towards Robust Interpretability with Self-Explaining Neural Networks](https://papers.nips.cc/paper/8003-towards-robust-interpretability-with-self-explaining-neural-networks#:~:text=paper)
   <details>
   <summary> D. Alvarez-Melis & T. Jaakkola 
@@ -255,10 +266,5 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> R. Shokri et al. <em>AAAI/ACM Conference on AI, Ethics, and Society (AIES)</em> 2021 </summary>
     Privacy and transparency are two key foundations of trustworthy machine learning. Model explanations offer insights into a model’s decisions on input data, whereas privacy is primarily concerned with protecting information about the training data. We analyze connections between model explanations and the leakage of sensitive information about the model’s training set. We investigate the privacy risks of feature-based model explanations using membership inference attacks: quantifying how much model predictions plus their explanations leak information about the presence of a datapoint in the training set of a model. We extensively evaluate membership inference attacks based on feature-based model explanations, over a variety of datasets. We show that backpropagation-based explanations can leak a significant amount of information about individual training datapoints. This is because they reveal statistical information about the decision boundaries of the model about an input, which can reveal its membership. We also empirically investigate the trade-off between privacy and explanation quality, by studying the perturbation-based model explanations.
   </details>
-
-
-## Software
-
-...
 
 <p align="center"> <em>Contributions are welcome</em> </p>
