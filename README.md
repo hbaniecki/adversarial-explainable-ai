@@ -56,7 +56,6 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>International Conference on Learning Representations (ICLR)</em> 2018 </summary>
     Understanding the flow of information in Deep Neural Networks (DNNs) is a challenging problem that has gain increasing attention over the last few years. While several methods have been proposed to explain network predictions, there have been only a few attempts to compare them from a theoretical perspective. What is more, no exhaustive empirical comparison has been performed in the past. In this work we analyze four gradient-based attribution methods and formally prove conditions of equivalence and approximation between them. By reformulating two of these methods, we construct a unified framework which enables a direct comparison, as well as an easier implementation. Finally, we propose a novel evaluation metric, called Sensitivity-n and test the gradient-based attribution methods alongside with a simple perturbation-based attribution method on several datasets in the domains of image and text classification, using various network architectures.
   </details>
-  
 * [Towards Robust Interpretability with Self-Explaining Neural Networks](https://papers.nips.cc/paper/8003-towards-robust-interpretability-with-self-explaining-neural-networks#:~:text=paper)
   <details>
   <summary> D. Alvarez-Melis & T. Jaakkola 
@@ -68,18 +67,6 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> J. Adebayo et al. 
       <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2018 </summary>
     Saliency methods have emerged as a popular tool to highlight features in an input deemed relevant for the prediction of a learned model. Several saliency methods have been proposed, often guided by visual appeal on image data. In this work, we propose an actionable methodology to evaluate what kinds of explanations a given method can and cannot provide. We find that reliance, solely, on visual assessment can be misleading. Through extensive experiments we show that some existing saliency methods are independent both of the model and of the data generating process. Consequently, methods that fail the proposed tests are inadequate for tasks that are sensitive to either data or model, such as, finding outliers in the data, explaining the relationship between inputs and outputs that the model learned, and debugging the model. We interpret our findings through an analogy with edge detection in images, a technique that requires neither training data nor model. Theory in the case of a linear model and a single-layer convolutional neural network supports our experimental findings.
-  </details>
-* [On Relating Explanations and Adversarial Examples](https://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples#:~:text=paper)
-  <details>
-  <summary> A. Ignatiev et al. 
-      <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2019 </summary>
-    The importance of explanations (XP's) of machine learning (ML) model predictions and of adversarial examples (AE's) cannot be overstated, with both arguably being essential for the practical success of ML in different settings. There has been recent work on understanding and assessing the relationship between XP's and AE's. However, such work has been mostly experimental and a sound theoretical relationship has been elusive. This paper demonstrates that explanations and adversarial examples are related by a generalized form of hitting set duality, which extends earlier work on hitting set duality observed in model-based diagnosis and knowledge compilation. Furthermore, the paper proposes algorithms, which enable computing adversarial examples from explanations and vice-versa.
-  </details>
-* [Robustness in Machine Learning Explanations: Does It Matter?](https://www.dropbox.com/s/u4kwdk9m5o2u2sb/preprint.pdf)
-  <details>
-  <summary> L. Hancox-Li 
-      <em>Conference on Fairness, Accountability, and Transparency (FAccT)</em> 2020 </summary>
-    The explainable AI literature contains multiple notions of what an explanation is and what desiderata explanations should satisfy. One implicit source of disagreement is how far the explanations should reflect real patterns in the data or the world. This disagreement underlies debates about other desiderata, such as how robust explanations are to slight perturbations in the input data. I argue that robustness is desirable to the extent that we’re concerned about finding real patterns in the world. The import of real patterns differs according to the problem context. In some contexts, non-robust explanations can constitute a moral hazard. By being clear about the extent to which we care about capturing real patterns, we can also determine whether the Rashomon Effect is a boon or a bane.
   </details>
 
 ### Attacks on XAI
@@ -246,6 +233,18 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Further related
 
+* [On Relating Explanations and Adversarial Examples](https://papers.nips.cc/paper/9717-on-relating-explanations-and-adversarial-examples#:~:text=paper)
+  <details>
+  <summary> A. Ignatiev et al. 
+      <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2019 </summary>
+    The importance of explanations (XP's) of machine learning (ML) model predictions and of adversarial examples (AE's) cannot be overstated, with both arguably being essential for the practical success of ML in different settings. There has been recent work on understanding and assessing the relationship between XP's and AE's. However, such work has been mostly experimental and a sound theoretical relationship has been elusive. This paper demonstrates that explanations and adversarial examples are related by a generalized form of hitting set duality, which extends earlier work on hitting set duality observed in model-based diagnosis and knowledge compilation. Furthermore, the paper proposes algorithms, which enable computing adversarial examples from explanations and vice-versa.
+  </details>
+* [Robustness in Machine Learning Explanations: Does It Matter?](https://www.dropbox.com/s/u4kwdk9m5o2u2sb/preprint.pdf)
+  <details>
+  <summary> L. Hancox-Li 
+      <em>Conference on Fairness, Accountability, and Transparency (FAccT)</em> 2020 </summary>
+    The explainable AI literature contains multiple notions of what an explanation is and what desiderata explanations should satisfy. One implicit source of disagreement is how far the explanations should reflect real patterns in the data or the world. This disagreement underlies debates about other desiderata, such as how robust explanations are to slight perturbations in the input data. I argue that robustness is desirable to the extent that we’re concerned about finding real patterns in the world. The import of real patterns differs according to the problem context. In some contexts, non-robust explanations can constitute a moral hazard. By being clear about the extent to which we care about capturing real patterns, we can also determine whether the Rashomon Effect is a boon or a bane.
+  </details>
 * [When Explainability Meets Adversarial Learning: Detecting Adversarial Examples using SHAP Signatures](https://arxiv.org/abs/1909.03418#:~:text=pdf)
   <details>
   <summary> G. Fidel et al. <em>International Joint Conference on Neural Networks (IJCNN)</em> 2020 </summary>
