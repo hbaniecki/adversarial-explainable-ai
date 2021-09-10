@@ -29,7 +29,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Software
 
-* Captum ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
+* **Captum** ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
 
 ## Papers
 
@@ -214,6 +214,11 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <details>
   <summary> M. Fan et al. <em>IEEE Transactions on Information Forensics and Security</em> 2020 </summary>
     With the rapid growth of Android malware, many machine learning-based malware analysis approaches are proposed to mitigate the severe phenomenon. However, such classifiers are opaque, non-intuitive, and difficult for analysts to understand the inner decision reason. For this reason, a variety of explanation approaches are proposed to interpret predictions by providing important features. Unfortunately, the explanation results obtained in the malware analysis domain cannot achieve a consensus in general, which makes the analysts confused about whether they can trust such results. In this work, we propose principled guidelines to assess the quality of five explanation approaches by designing three critical quantitative metrics to measure their stability, robustness, and effectiveness. Furthermore, we collect five widely-used malware datasets and apply the explanation approaches on them in two tasks, including malware detection and familial identification. Based on the generated explanation results, we conduct a sanity check of such explanation approaches in terms of the three metrics. The results demonstrate that our metrics can assess the explanation approaches and help us obtain the knowledge of most typical malicious behaviors for malware analysis.
+  </details>
+* [Evaluation of Similarity-based Explanations](https://openreview.net/forum?id=9uvhpyQwzM_)
+  <details>
+  <summary> K. Hanawa et al. <em>International Conference on Learning Representations (ICLR)</em> 2021 </summary>
+    Explaining the predictions made by complex machine learning models helps users to understand and accept the predicted outputs with confidence. One promising way is to use similarity-based explanation that provides similar instances as evidence to support model predictions. Several relevance metrics are used for this purpose. In this study, we investigated relevance metrics that can provide reasonable explanations to users. Specifically, we adopted three tests to evaluate whether the relevance metrics satisfy the minimal requirements for similarity-based explanation. Our experiments revealed that the cosine similarity of the gradients of the loss performs best, which would be a recommended choice in practice. In addition, we showed that some metrics perform poorly in our tests and analyzed the reasons of their failure. We expect our insights to help practitioners in selecting appropriate relevance metrics and also aid further researches for designing better relevance metrics for explanations.
   </details>
 * [Evaluation of Saliency-based Explainability Method](https://arxiv.org/abs/2106.12773#:~:text=pdf)
   <details>
