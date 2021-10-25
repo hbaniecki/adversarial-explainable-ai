@@ -129,7 +129,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Fairwashing Explanations with Off-Manifold Detergent](https://proceedings.mlr.press/v119/anders20a#:~:text=download%20pdf)
   <details>
-  <summary> C. J. Anderset et al. <em>International Conference on Machine Learning (ICML)</em> 2020 </summary>
+  <summary> C. J. Anders et al. <em>International Conference on Machine Learning (ICML)</em> 2020 </summary>
     Explanation methods promise to make black-box classifiers more transparent. As a result, it is hoped that they can act as proof for a sensible, fair and trustworthy decision-making process of the algorithm and thereby increase its acceptance by the end-users. In this paper, we show both theoretically and experimentally that these hopes are presently unfounded. Specifically, we show that, for any classifier g, one can always construct another classifier g' which has the same behavior on the data (same train, validation, and test error) but has arbitrarily manipulated explanation maps. We derive this statement theoretically using differential geometry and demonstrate it experimentally for various explanation methods, architectures, and datasets. Motivated by our theoretical insights, we then propose a modification of existing explanation methods which makes them significantly more robust.
   </details>
 * [Black Box Attacks on Explainable Artificial Intelligence(XAI) methods in Cyber Security](https://ieeexplore.ieee.org/abstract/document/9206780)
