@@ -26,6 +26,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 * ICML 2020 Workshop on Human Interpretability in Machine Learning (ICML WHI) [[website]](https://sites.google.com/view/whi2020)
 * ICLR 2021 Workshop on Responsible AI (ICLR RAI) [[website]](https://iclr.cc/virtual/2021/workshop/2132)
 * ICML 2021 Workshop on <sub><sup> Theoretic Foundation, Criticism, and Application Trend of</sup></sub> Explainable AI (ICML XAI) [[website]](https://icml2021-xai.github.io) [[proceedings]](https://arxiv.org/html/2107.08821)
+* NeurIPS 2021 Workshop on eXplainable AI approaches for debugging and diagnosis (NeurIPS XAI) [[website]](https://xai4debugging.github.io/) 
 
 ## Software
 
@@ -33,7 +34,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Papers
 
-**Introduction**
+### Surveys
 
 * [Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)
   <details>
@@ -47,8 +48,14 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>Information Fusion</em> 2021 </summary>
     Explainable Artificial Intelligence (XAI) has experienced a significant growth over the last few years. This is due to the widespread application of machine learning, particularly deep learning, that has led to the development of highly accurate models that lack explainability and interpretability. A plethora of methods to tackle this problem have been proposed, developed and tested, coupled with several studies attempting to define the concept of explainability and its evaluation. This systematic review contributes to the body of knowledge by clustering all the scientific studies via a hierarchical system that classifies theories and notions related to the concept of explainability and the evaluation approaches for XAI methods. The structure of this hierarchy builds on top of an exhaustive analysis of existing taxonomies and peer-reviewed scientific material. Findings suggest that scholars have identified numerous notions and requirements that an explanation should meet in order to be easily understandable by end-users and to provide actionable information that can inform decision making. They have also suggested various approaches to assess to what degree machine-generated explanations meet these demands. Overall, these approaches can be clustered into human-centred evaluations and evaluations with more objective metrics. However, despite the vast body of knowledge developed around the concept of explainability, there is not a general consensus among scholars on how an explanation should be defined, and how its validity and reliability assessed. Eventually, this review concludes by critically discussing these gaps and limitations, and it defines future research directions with explainability as the starting component of any artificial intelligent system.
   </details>
+* [A Survey on the Robustness of Feature Importance and Counterfactual Explanations](https://arxiv.org/abs/2111.00358)
+  <details>
+  <summary> S. Mishra et al.  
+      <em>Workshop on Explainable AI in Finance (ICAIF XAI)</em> 2021 </summary>
+    There exist several methods that aim to address the crucial task of understanding the behaviour of AI/ML models. Arguably, the most popular among them are local explanations that focus on investigating model behaviour for individual instances. Several methods have been proposed for local analysis, but relatively lesser effort has gone into understanding if the explanations are robust and accurately reflect the behaviour of underlying models. In this work, we present a survey of the works that analysed the robustness of two classes of local explanations (feature importance and counterfactual explanations) that are popularly used in analysing AI/ML models in finance. The survey aims to unify existing definitions of robustness, introduces a taxonomy to classify different robustness approaches, and discusses some interesting results. Finally, the survey introduces some pointers about extending current robustness analysis approaches so as to identify reliable explainability methods.
+  </details>
 
-**Background**
+### Background
 
 * [Towards better understanding of gradient-based attribution methods for Deep Neural Networks](https://openreview.net/forum?id=Sy21R9JAW)
   <details>
@@ -69,7 +76,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
     Saliency methods have emerged as a popular tool to highlight features in an input deemed relevant for the prediction of a learned model. Several saliency methods have been proposed, often guided by visual appeal on image data. In this work, we propose an actionable methodology to evaluate what kinds of explanations a given method can and cannot provide. We find that reliance, solely, on visual assessment can be misleading. Through extensive experiments we show that some existing saliency methods are independent both of the model and of the data generating process. Consequently, methods that fail the proposed tests are inadequate for tasks that are sensitive to either data or model, such as, finding outliers in the data, explaining the relationship between inputs and outputs that the model learned, and debugging the model. We interpret our findings through an analogy with edge detection in images, a technique that requires neither training data nor model. Theory in the case of a linear model and a single-layer convolutional neural network supports our experimental findings.
   </details>
 
-### Attacks on XAI
+### Attacks on explainability and fairness
 
 * [Interpretation of Neural Networks Is Fragile](https://www.aaai.org/ojs/index.php/AAAI/article/view/4252#:~:text=pdf)
   <details>
@@ -147,13 +154,13 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> E. Le Merrer & G. Tredan <em>Nature Machine Intelligence</em> 2020 </summary>
     The concept of explainability is envisioned to satisfy society’s demands for transparency about machine learning decisions. The concept is simple: like humans, algorithms should explain the rationale behind their decisions so that their fairness can be assessed. Although this approach is promising in a local context (for example, the model creator explains it during debugging at the time of training), we argue that this reasoning cannot simply be transposed to a remote context, where a model trained by a service provider is only accessible to a user through a network and its application programming interface. This is problematic, as it constitutes precisely the target use case requiring transparency from a societal perspective. Through an analogy with a club bouncer (who may provide untruthful explanations upon customer rejection), we show that providing explanations cannot prevent a remote service from lying about the true reasons leading to its decisions. More precisely, we observe the impossibility of remote explainability for single explanations by constructing an attack on explanations that hides discriminatory features from the querying user. We provide an example implementation of this attack. We then show that the probability that an observer spots the attack, using several explanations for attempting to find incoherences, is low in practical settings. This undermines the very concept of remote explainability in general.
   </details>
-* [Counterfactual Explanations Can Be Manipulated](https://arxiv.org/abs/2106.02666v1#:~:text=pdf)
+* [Counterfactual Explanations Can Be Manipulated](https://openreview.net/forum?id=iaO_IH7CnGJ)
   <details>
-  <summary> D. Slack et al. <em>arXiv preprint arXiv:2106.02666v1</em> 2021 </summary>
-    Counterfactual explanations are emerging as an attractive option for providing recourse to individuals adversely impacted by algorithmic decisions. As they are deployed in critical applications (e.g. law enforcement, financial lending), it becomes important to ensure that we clearly understand the vulnerabilities of these methods and find ways to address them. However, there is little understanding of the vulnerabilities and shortcomings of counterfactual explanations. In this work, we introduce the first framework that describes the vulnerabilities of counterfactual explanations and shows how they can be manipulated. More specifically, we show counterfactual explanations may converge to drastically different counterfactuals under a small perturbation indicating they are not robust. Leveraging this insight, we introduce a novel objective to train seemingly fair models where counterfactual explanations find much lower cost recourse under a slight perturbation. We describe how these models can unfairly provide low-cost recourse for specific subgroups in the data while appearing fair to auditors. We perform experiments on loan and violent crime prediction data sets where certain subgroups achieve up to 20x lower cost recourse under the perturbation. These results raise concerns regarding the dependability of current counterfactual explanation techniques, which we hope will inspire investigations in robust counterfactual explanations.
+  <summary> D. Slack et al. <em>Neural Information Processing Systems (NeurIPS)</em> 2021 </summary>
+    Counterfactual explanations are emerging as an attractive option for providing recourse to individuals adversely impacted by algorithmic decisions. As they are deployed in critical applications (e.g law enforcement, financial lending), it becomes important to ensure that we clearly understand the vulnerabilties of these methods and find ways to address them. However, there is little understanding of the vulnerabilities and shortcomings of counterfactual explanations. In this work, we introduce the first framework that describes the vulnerabilities of counterfactual explanations and shows how they can be manipulated. More specifically, we show counterfactual explanations may converge to drastically different counterfactuals under a small perturbation indicating they are not robust. Leveraging this insight, we introduce a novel objective to train seemingly fair models where counterfactual explanations find much lower cost recourse under a slight perturbation. We describe how these models can unfairly provide low-cost recourse for specific subgroups in the data while appearing fair to auditors. We perform experiments on loan and violent crime prediction data sets where certain subgroups achieve up to 20x lower cost recourse under the perturbation. These results raise concerns regarding the dependability of current counterfactual explanation techniques, which we hope will inspire investigations in robust counterfactual explanations.
   </details>
   
-### Defense from attacks on XAI
+### Defense from the attacks & robust explanations
 
 * [Adversarial Explanations for Understanding Image Classification Decisions and Improved NN Robustness](https://arxiv.org/abs/1906.02896#:~:text=pdf)
   <details>
@@ -178,8 +185,13 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Smoothed Geometry for Robust Attribution](https://proceedings.neurips.cc/paper/2020/hash/9d94c8981a48d12adfeecfe1ae6e0ec1-Abstract.html#:~:text=paper)
   <details>
-  <summary> Z. Wang et al. <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2020 </summary>
+  <summary> Z. Wang et al. <em>Neural Information Processing Systems (NeurIPS)</em> 2020 </summary>
     Feature attributions are a popular tool for explaining the behavior of Deep Neural Networks (DNNs), but have recently been shown to be vulnerable to attacks that produce divergent explanations for nearby inputs. This lack of robustness is especially problematic in high-stakes applications where adversarially-manipulated explanations could impair safety and trustworthiness. Building on a geometric understanding of these attacks presented in recent work, we identify Lipschitz continuity conditions on models' gradient that lead to robust gradient-based attributions, and observe that smoothness may also be related to the ability of an attack to transfer across multiple attribution methods. To mitigate these attacks in practice, we propose an inexpensive regularization method that promotes these conditions in DNNs, as well as a stochastic smoothing technique that does not require re-training. Our experiments on a range of image models demonstrate that both of these mitigations consistently improve attribution robustness, and confirm the role that smooth geometry plays in these attacks on real, large-scale models.
+  </details>
+* [Reliable Post hoc Explanations: Modeling Uncertainty in Explainability](https://openreview.net/forum?id=rqfq0CYIekd)
+  <details>
+  <summary> D. Slack et al. <em>Neural Information Processing Systems (NeurIPS)</em> 2021 </summary>
+    As black box explanations are increasingly being employed to establish model credibility in high stakes settings, it is important to ensure that these explanations are accurate and reliable. However, prior work demonstrates that explanations generated by state-of-the-art techniques are inconsistent, unstable, and provide very little insight into their correctness and reliability. In addition these methods are also computationally inefficient, and require significant hyper-parameter tuning. In this paper, we address the aforementioned challenges by developing a novel Bayesian framework for generating local explanations along with their associated uncertainty. We instantiate this framework to obtain Bayesian versions of LIME and KernelSHAP which output credible intervals for the feature importances, capturing the associated uncertainty. The resulting explanations not only enable us to make concrete inferences about their quality (e.g., there is a 95% chance that the feature importance lies within the given range), but are also highly consistent and stable. We carry out a detailed theoretical analysis that leverages the aforementioned uncertainty to estimate how many perturbations to sample, and how to sample for faster convergence. This work makes the first attempt at addressing several critical issues with popular explanation methods in one shot, thereby generating consistent, stable, and reliable explanations with guarantees in a computationally efficient manner. Experimental evaluation with multiple real world datasets and user studies demonstrate that the efficacy of the proposed framework.
   </details>
 * [Towards robust explanations for deep neural networks](https://doi.org/10.1016/j.patcog.2021.108194)
   <details>
@@ -191,7 +203,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 * [A Benchmark for Interpretability Methods in Deep Neural Networks](https://papers.neurips.cc/paper/9167-a-benchmark-for-interpretability-methods-in-deep-neural-networkss#:~:text=pdf)
   <details>
-  <summary> S. Hooker et al. <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2019 </summary>
+  <summary> S. Hooker et al. <em>Neural Information Processing Systems (NeurIPS)</em> 2019 </summary>
     We propose an empirical measure of the approximate accuracy of feature importance estimates in deep neural networks. Our results across several large-scale image classification datasets show that many popular interpretability methods produce estimates of feature importance that are not better than a random designation of feature importance. Only certain ensemble based approaches---VarGrad and SmoothGrad-Squared---outperform such a random assignment of importance. The manner of ensembling remains critical, we show that some approaches do no better then the underlying method but carry a far higher computational burden.
   </details>
 * [Evaluating Explanation Methods for Deep Learning in Security](https://arxiv.org/abs/1906.02108#:~:text=pdf)
@@ -207,7 +219,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 * [Debugging Tests for Model Explanations](https://proceedings.neurips.cc/paper/2020/hash/075b051ec3d22dac7b33f788da631fd4-Abstract.html#:~:text=paper)
   <details>
   <summary> J. Adebayo et al. 
-      <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 2020 </summary>
+      <em>Neural Information Processing Systems (NeurIPS)</em> 2020 </summary>
     We investigate whether post-hoc model explanations are effective for diagnosing model errors–model debugging. In response to the challenge of explaining a model’s prediction, a vast array of explanation methods have been proposed. Despite increasing use, it is unclear if they are effective. To start, we categorize bugs, based on their source, into: data, model, and test-time contamination bugs. For several explanation methods, we assess their ability to: detect spurious correlation artifacts (data contamination), diagnose mislabeled training examples (data contamination), differentiate between a (partially) re-initialized model and a trained one (model contamination), and detect out-of-distribution inputs (test-time contamination). We find that the methods tested are able to diagnose a spurious background bug, but not conclusively identify mislabeled training examples. In addition, a class of methods, that modify the back-propagation algorithm are invariant to the higher layer parameters of a deep network; hence, ineffective for diagnosing model contamination. We complement our analysis with a human subject study, and find that subjects fail to identify defective models using attributions, but instead rely, primarily, on model predictions. Taken together, our results provide guidance for practitioners and researchers turning to explanations as tools for model debugging.
   </details>
 * [Can We Trust Your Explanations? Sanity Checks for Interpreters in Android Malware Analysis](https://arxiv.org/abs/2008.05895v1#:~:text=pdf)
@@ -237,7 +249,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 * [Do Feature Attribution Methods Correctly Attribute Features?](https://arxiv.org/abs/2104.14403v1#:~:text=pdf)
   <details>
-  <summary> Y. Zhou et al. <em>arXiv preprint arXiv:2104.14403v1</em> 2021 </summary>
+  <summary> Y. Zhou et al. <em>Workshop on eXplainable AI approaches for debugging and diagnosis (NeurIPS XAI)</em> 2021 </summary>
     Feature attribution methods are exceedingly popular in interpretable machine learning. They aim to compute the attribution of each input feature to represent its importance, but there is no consensus on the definition of "attribution", leading to many competing methods with little systematic evaluation. The lack of attribution ground truth further complicates evaluation, which has to rely on proxy metrics. To address this, we propose a dataset modification procedure such that models trained on the new dataset have ground truth attribution available. We evaluate three methods: saliency maps, rationales, and attention. We identify their deficiencies and add a new perspective to the growing body of evidence questioning their correctness and reliability in the wild. Our evaluation approach is model-agnostic and can be used to assess future feature attribution method proposals as well. Code is available at https://github.com/YilunZhou/feature-attribution-evaluation.
   </details>
 
