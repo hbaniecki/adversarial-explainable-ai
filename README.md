@@ -172,7 +172,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   
 ### Defense from the attacks & robust explanations
 
-* [Adversarial Explanations for Understanding Image Classification Decisions and Improved NN Robustness](https://arxiv.org/abs/1906.02896#:~:text=pdf)
+* [Adversarial explanations for understanding image classification decisions and improved NN robustness](https://arxiv.org/abs/1906.02896#:~:text=pdf)
   <details>
   <summary> W. Woods et al. <em>Nature Machine Intelligence</em> 2019 </summary>
     For sensitive problems, such as medical imaging or fraud detection, Neural Network (NN) adoption has been slow due to concerns about their reliability, leading to a number of algorithms for explaining their decisions. NNs have also been found vulnerable to a class of imperceptible attacks, called adversarial examples, which arbitrarily alter the output of the network. Here we demonstrate both that these attacks can invalidate prior attempts to explain the decisions of NNs, and that with very robust networks, the attacks themselves may be leveraged as explanations with greater fidelity to the model. We show that the introduction of a novel regularization technique inspired by the Lipschitz constraint, alongside other proposed improvements, greatly improves an NN's resistance to adversarial examples. On the ImageNet classification task, we demonstrate a network with an Accuracy-Robustness Area (ARA) of 0.0053, an ARA 2.4x greater than the previous state of the art. Improving the mechanisms by which NN decisions are understood is an important direction for both establishing trust in sensitive domains and learning more about the stimuli to which NNs respond.
