@@ -30,6 +30,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Software
 
+* **Quantus** ![](https://img.shields.io/github/stars/understandable-machine-intelligence-lab/quantus.svg?style=social) [An Explainable AI Toolkit for Responsible Evaluation of Neural Network Explanations](https://arxiv.org/abs/2202.06861)
+  <details>
+  <summary> A. Hedström et al. 
+      <em>arXiv preprint</em> 2022 </summary>
+    The evaluation of explanation methods is a research topic that has not yet been explored deeply, however, since explainability is supposed to strengthen trust in artificial intelligence, it is necessary to systematically review and compare explanation methods in order to confirm their correctness. Until now, no tool exists that exhaustively and speedily allows researchers to quantitatively evaluate explanations of neural network predictions. To increase transparency and reproducibility in the field, we therefore built Quantus - a comprehensive, open-source toolkit in Python that includes a growing, well-organised collection of evaluation metrics and tutorials for evaluating explainable methods. The toolkit has been thoroughly tested and is available under open source license on PyPi (or on https://github.com/understandable-machine-intelligence-lab/quantus).
+  </details>
 * **Captum** ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
 
 ## Papers
