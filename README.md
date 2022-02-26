@@ -12,7 +12,7 @@ or contact me [@hbaniecki](https://github.com/hbaniecki#:~:text=hbaniecki@gmail.
   </a>
 </p>
 
-There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, **attacks on model explanations** come to light, so does the **defense** to such adversary.
+There are various adversarial attacks on machine learning models; hence, ways of defending, e.g. by using XAI techniques. Nowadays, **attacks on model explanations** come to light, so does the **defense** to such adversary. Simultaneously, **evaluation** of explanations becomes mandatory for a trustworthy adoption of XAI.
 
 <p align="center"> <em>Veritas Vincit</em> </p>
 
@@ -40,6 +40,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Datasets and Benchmarks
 
+* **Kandinsky Patterns** ![](https://img.shields.io/github/stars/human-centered-ai-lab/dat-kandinsky-patterns.svg?style=social) [“Mathematically describable [...] synthetic test data sets for the development, validation and training of visual tasks and explainability in AI”](https://doi.org/10.1016/j.artint.2021.103546)
+  <details>
+  <summary> H. Müller & A. Holzinger 
+      <em>Artificial Intelligence</em> 2021 </summary>
+    Kandinsky Figures and Kandinsky Patterns are mathematically describable, simple, self-contained hence controllable synthetic test data sets for the development, validation and training of visual tasks and explainability in artificial intelligence (AI). Whilst Kandinsky Patterns have these computationally manageable properties, they are at the same time easily distinguishable by human observers. Consequently, controlled patterns can be described by both humans and computers. We define a Kandinsky Pattern as a set of Kandinsky Figures, where for each figure an “infallible authority” defines that the figure belongs to the Kandinsky Pattern. With this simple principle we build training and validation data sets for testing explainability, interpretability and context learning. In this paper we describe the basic idea and some underlying principles of Kandinsky Patterns. We provide a Github repository and invite the international AI research community to a challenge to experiment with our Kandinsky Patterns. The goal is to help expand and advance the field of AI, and in particular to contribute to the increasingly important field of explainable AI.
+  </details>
 * **XAI-Bench** ![](https://img.shields.io/github/stars/abacusai/xai-bench.svg?style=social) [Synthetic Benchmarks for Scientific Research in Explainable Machine Learning](https://openreview.net/forum?id=R7vr14ffhF9)
   <details>
   <summary> Y. Liu et al. 
