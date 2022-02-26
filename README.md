@@ -30,14 +30,30 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ## Software
 
+* **Captum** ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
 * **Quantus** ![](https://img.shields.io/github/stars/understandable-machine-intelligence-lab/quantus.svg?style=social) [An Explainable AI Toolkit for Responsible Evaluation of Neural Network Explanations](https://arxiv.org/abs/2202.06861)
   <details>
   <summary> A. Hedström et al. 
       <em>arXiv preprint</em> 2022 </summary>
     The evaluation of explanation methods is a research topic that has not yet been explored deeply, however, since explainability is supposed to strengthen trust in artificial intelligence, it is necessary to systematically review and compare explanation methods in order to confirm their correctness. Until now, no tool exists that exhaustively and speedily allows researchers to quantitatively evaluate explanations of neural network predictions. To increase transparency and reproducibility in the field, we therefore built Quantus - a comprehensive, open-source toolkit in Python that includes a growing, well-organised collection of evaluation metrics and tutorials for evaluating explainable methods. The toolkit has been thoroughly tested and is available under open source license on PyPi (or on https://github.com/understandable-machine-intelligence-lab/quantus).
   </details>
-* **Captum** ![](https://img.shields.io/github/stars/pytorch/captum.svg?style=social) [Model interpretability and understanding for PyTorch](https://captum.ai) with [metrics](https://captum.ai/api/metrics.html) and [NoiseTunnel](https://captum.ai/api/noise_tunnel.html)
 
+## Datasets and Benchmarks
+
+* **XAI-Bench** ![](https://img.shields.io/github/stars/abacusai/xai-bench.svg?style=social) [Synthetic Benchmarks for Scientific Research in Explainable Machine Learning](https://openreview.net/forum?id=R7vr14ffhF9)
+  <details>
+  <summary> Y. Liu et al. 
+      <em>Neural Information Processing Systems (NeurIPS)</em> 2021 </summary>
+    As machine learning models grow more complex and their applications become more high-stakes, tools for explaining model predictions have become increasingly important. This has spurred a flurry of research in model explainability and has given rise to feature attribution methods such as LIME and SHAP. Despite their widespread use, evaluating and comparing different feature attribution methods remains challenging: evaluations ideally require human studies, and empirical evaluation metrics are often data-intensive or computationally prohibitive on real-world datasets. In this work, we address this issue by releasing XAI-Bench: a suite of synthetic datasets along with a library for benchmarking feature attribution algorithms. Unlike real-world datasets, synthetic datasets allow the efficient computation of conditional expected values that are needed to evaluate ground-truth Shapley values and other metrics. The synthetic datasets we release offer a wide variety of parameters that can be configured to simulate real-world data. We demonstrate the power of our library by benchmarking popular explainability techniques across several evaluation metrics and across a variety of settings. The versatility and efficiency of our library will help researchers bring their explainability methods from development to deployment. Our code is available at https://github.com/abacusai/xai-bench.
+  </details>
+* **CLEVR-XAI** ![](https://img.shields.io/github/stars/ahmedmagdiosman/clevr-xai.svg?style=social) [A benchmark dataset for the ground truth evaluation of neural network explanations](https://doi.org/10.1016/j.inffus.2021.11.008)
+  <details>
+  <summary> L. Arras et al. 
+      <em>Information Fusion</em> 2022 </summary>
+    The rise of deep learning in today’s applications entailed an increasing need in explaining the model’s decisions beyond prediction performances in order to foster trust and accountability. Recently, the field of explainable AI (XAI) has developed methods that provide such explanations for already trained neural networks. In computer vision tasks such explanations, termed heatmaps, visualize the contributions of individual pixels to the prediction. So far XAI methods along with their heatmaps were mainly validated qualitatively via human-based assessment, or evaluated through auxiliary proxy tasks such as pixel perturbation, weak object localization or randomization tests. Due to the lack of an objective and commonly accepted quality measure for heatmaps, it was debatable which XAI method performs best and whether explanations can be trusted at all. In the present work, we tackle the problem by proposing a ground truth based evaluation framework for XAI methods based on the CLEVR visual question answering task. Our framework provides a (1) selective, (2) controlled and (3) realistic testbed for the evaluation of neural network explanations. We compare ten different explanation methods, resulting in new insights about the quality and properties of XAI methods, sometimes contradicting with conclusions from previous comparative studies. The CLEVR-XAI dataset and the benchmarking code can be found at https://github.com/ahmedmagdiosman/clevr-xai.
+  </details>
+
+  
 ## Papers
 
 ### Surveys
