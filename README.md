@@ -20,6 +20,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 * [AAAI/ACM Conference on AI, Ethics, and Society (AIES)](https://www.aies-conference.com)
 * [ACM Conference on Fairness, Accountability, and Transparency (FAccT)](https://facctconference.org/)
+* [IEEE Conference on Secure and Trustworthy Machine Learning](https://satml.org/)
 
 ## Workshops 
 
