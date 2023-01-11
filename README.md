@@ -444,6 +444,8 @@ There are various adversarial attacks on machine learning models; hence, ways of
   </details>
 
 ### Further related
+<details>
+<summary> <h3> Further related papers </h3> </summary>
 
 * [On the Connection Between Adversarial Robustness and Saliency Map Interpretability](http://proceedings.mlr.press/v97/etmann19a.html)
   <details>
@@ -498,5 +500,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
   <summary> A. Rahnama & A. Tseng. <em>Workshop on Fair, Data-Efficient, and Trusted Computer Vision (CVPR TCV)</em>, 2021 </summary>
     Machine learning models have been successfully applied to a wide range of applications including computer vision, natural language processing, and speech recognition. A successful implementation of these models however, usually relies on deep neural networks (DNNs) which are treated as opaque black-box systems due to their incomprehensible complexity and intricate internal mechanism. In this work, we present a novel algorithm for explaining the predictions of a DNN using adversarial machine learning. Our approach identifies the relative importance of input features in relation to the predictions based on the behavior of an adversarial attack on the DNN. Our algorithm has the advantage of being fast, consistent, and easy to implement and interpret. We present our detailed analysis that demonstrates how the behavior of an adversarial attack, given a DNN and a task, stays consistent for any input test data point proving the generality of our approach. Our analysis enables us to produce consistent and efficient explanations. We illustrate the effectiveness of our approach by conducting experiments using a variety of DNNs, tasks, and datasets. Finally, we compare our work with other well-known techniques in the current literature.
   </details>
+  
+</details>
 
 <p align="center"> <em>Contributions are welcome</em> </p>
