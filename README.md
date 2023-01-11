@@ -107,6 +107,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>Workshop on Explainable AI in Finance (ICAIF XAI)</em>, 2021 </summary>
     There exist several methods that aim to address the crucial task of understanding the behaviour of AI/ML models. Arguably, the most popular among them are local explanations that focus on investigating model behaviour for individual instances. Several methods have been proposed for local analysis, but relatively lesser effort has gone into understanding if the explanations are robust and accurately reflect the behaviour of underlying models. In this work, we present a survey of the works that analysed the robustness of two classes of local explanations (feature importance and counterfactual explanations) that are popularly used in analysing AI/ML models in finance. The survey aims to unify existing definitions of robustness, introduces a taxonomy to classify different robustness approaches, and discusses some interesting results. Finally, the survey introduces some pointers about extending current robustness analysis approaches so as to identify reliable explainability methods.
   </details>
+* [On the Robustness of Explanations of Deep Neural Network Models: A Survey](https://arxiv.org/abs/2211.04780)
+  <details>
+  <summary> A. Jyoti et al.  
+      <em>arXiv preprint</em>, 2022 </summary>
+    Explainability has been widely stated as a cornerstone of the responsible and trustworthy use of machine learning models. With the ubiquitous use of Deep Neural Network (DNN) models expanding to risk-sensitive and safety-critical domains, many methods have been proposed to explain the decisions of these models. Recent years have also seen concerted efforts that have shown how such explanations can be distorted (attacked) by minor input perturbations. While there have been many surveys that review explainability methods themselves, there has been no effort hitherto to assimilate the different methods and metrics proposed to study the robustness of explanations of DNN models. In this work, we present a comprehensive survey of methods that study, understand, attack, and defend explanations of DNN models. We also present a detailed review of different metrics used to evaluate explanation methods, as well as describe attributional attack and defense methods. We conclude with lessons and take-aways for the community towards ensuring robust explanations of DNN model predictions.
+  </details>
 
 ### Background
 
