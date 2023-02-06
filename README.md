@@ -283,7 +283,12 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>IEEE Symposium on Security and Privacy (SP)</em>, 2023 </summary>
     Explainable machine learning holds great potential for analyzing and understanding learning-based systems. These methods can, however, be manipulated to present unfaithful explanations, giving rise to powerful and stealthy adversaries. In this paper, we demonstrate how to fully disguise the adversarial operation of a machine learning model. Similar to neural backdoors, we modify the model’s prediction upon trigger presence but simultaneously fool an explanation method that is applied post-hoc for analysis. This enables an adversary to hide the presence of the trigger or point the explanation to entirely different portions of the input, throwing a red herring. We analyze different manifestations of these explanation-aware backdoors for gradient- and propagation-based explanation methods in the image domain, before we resume to conduct a red-herring attack against malware classification.
   </details>
-  
+* [Fooling SHAP with Stealthily Biased Sampling](https://openreview.net/forum?id=J4mJjotSauh)
+  <details>
+  <summary> G. Laberge et al.
+      <em>International Conference on Learning Representations (ICLR)</em>, 2023 </summary>
+    SHAP explanations aim at identifying which features contribute the most to the difference in model prediction at a specific input versus a background distribution. Recent studies have shown that they can be manipulated by malicious adversaries to produce arbitrary desired explanations. However, existing attacks focus solely on altering the black-box model itself. In this paper, we propose a complementary family of attacks that leave the model intact and manipulate SHAP explanations using stealthily biased sampling of the data points used to approximate expectations w.r.t the background distribution. In the context of fairness audit, we show that our attack can reduce the importance of a sensitive feature when explaining the difference in outcomes between groups while remaining undetected. These results highlight the manipulability of SHAP explanations and encourage auditors to treat them with skepticism.
+  </details> 
 
 ### Defense from the attacks & robust explanations
 
