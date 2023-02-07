@@ -137,7 +137,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
 
 ### Attacks on explainability and fairness
 
-* [Interpretation of Neural Networks Is Fragile](https://www.aaai.org/ojs/index.php/AAAI/article/view/4252#:~:text=pdf)
+* [Interpretation of Neural Networks Is Fragile](https://doi.org/10.1609/aaai.v33i01.33013681)
   <details>
   <summary> A. Ghorbani et al. 
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2019 </summary>
@@ -187,13 +187,13 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>AAAI/ACM Conference on AI, Ethics, and Society (AIES)</em>, 2020 </summary>
     As machine learning black boxes are increasingly being deployed in critical domains such as healthcare and criminal justice, there has been a growing emphasis on developing techniques for explaining these black boxes in a human interpretable manner. There has been recent concern that a high-fidelity explanation of a black box ML model may not accurately reflect the biases in the black box. As a consequence, explanations have the potential to mislead human users into trusting a problematic black box. In this work, we rigorously explore the notion of misleading explanations and how they influence user trust in black box models. Specifically, we propose a novel theoretical framework for understanding and generating misleading explanations, and carry out a user study with domain experts to demonstrate how these explanations can be used to mislead users. Our work is the first to empirically establish how user trust in black box models can be manipulated via misleading explanations.
   </details>
-* [Faking Fairness via Stealthily Biased Sampling](https://www.aaai.org/ojs/index.php/AAAI/article/view/5377#:~:text=pdf)
+* [Faking Fairness via Stealthily Biased Sampling](https://doi.org/10.1609/aaai.v34i01.5377)
   <details>
   <summary> K. Fukuchi et al. 
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2020 </summary>
     Auditing fairness of decision-makers is now in high demand. To respond to this social demand, several fairness auditing tools have been developed. The focus of this study is to raise an awareness of the risk of malicious decision-makers who fake fairness by abusing the auditing tools and thereby deceiving the social communities. The question is whether such a fraud of the decision-maker is detectable so that the society can avoid the risk of fake fairness. In this study, we answer this question negatively. We specifically put our focus on a situation where the decision-maker publishes a benchmark dataset as the evidence of his/her fairness and attempts to deceive a person who uses an auditing tool that computes a fairness metric. To assess the (un)detectability of the fraud, we explicitly construct an algorithm, the stealthily biased sampling, that can deliberately construct an evil benchmark dataset via subsampling. We show that the fraud made by the stealthily based sampling is indeed difficult to detect both theoretically and empirically.
   </details>
-* [Sanity Checks for Saliency Metrics](https://www.aaai.org/ojs/index.php/AAAI/article/view/6064#:~:text=pdf)
+* [Sanity Checks for Saliency Metrics](https://doi.org/10.1609/aaai.v34i04.6064)
   <details>
   <summary> R. Tomsett et al. 
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2020 </summary>
@@ -265,7 +265,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>Neural Information Processing Systems (NeurIPS)</em>, 2021 </summary>
     Counterfactual explanations are emerging as an attractive option for providing recourse to individuals adversely impacted by algorithmic decisions. As they are deployed in critical applications (e.g law enforcement, financial lending), it becomes important to ensure that we clearly understand the vulnerabilties of these methods and find ways to address them. However, there is little understanding of the vulnerabilities and shortcomings of counterfactual explanations. In this work, we introduce the first framework that describes the vulnerabilities of counterfactual explanations and shows how they can be manipulated. More specifically, we show counterfactual explanations may converge to drastically different counterfactuals under a small perturbation indicating they are not robust. Leveraging this insight, we introduce a novel objective to train seemingly fair models where counterfactual explanations find much lower cost recourse under a slight perturbation. We describe how these models can unfairly provide low-cost recourse for specific subgroups in the data while appearing fair to auditors. We perform experiments on loan and violent crime prediction data sets where certain subgroups achieve up to 20x lower cost recourse under the perturbation. These results raise concerns regarding the dependability of current counterfactual explanation techniques, which we hope will inspire investigations in robust counterfactual explanations.
   </details>
-* [Manipulating SHAP via Adversarial Data Perturbations (Student Abstract)](https://ojs.aaai.org/index.php/AAAI/article/view/21590)
+* [Manipulating SHAP via Adversarial Data Perturbations (Student Abstract)](https://doi.org/10.1609/aaai.v36i11.21590)
   <details>
   <summary> H. Baniecki & P. Biecek. 
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2022 </summary>
