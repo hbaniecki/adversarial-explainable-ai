@@ -283,7 +283,7 @@ There are various adversarial attacks on machine learning models; hence, ways of
       <em>Workshop on New Frontiers in Adversarial Machine Learning (ICML AdvML Frontiers)</em>, 2022 </summary>
     Methods for model explainability have become increasingly critical for testing the fairness and soundness of deep learning. Concept-based interpretability techniques, which use a small set of human-interpretable concept exemplars in order to measure the influence of a concept on a model's internal representation of input, are an important thread in this line of research. In this work we show that these explainability methods can suffer the same vulnerability to adversarial attacks as the models they are meant to analyze. We demonstrate this phenomenon on two well-known concept-based interpretability methods: TCAV and faceted feature visualization. We show that by carefully perturbing the examples of the concept that is being investigated, we can radically change the output of the interpretability method. The attacks that we propose can either induce positive interpretations (polka dots are an important concept for a model when classifying zebras) or negative interpretations (stripes are not an important factor in identifying images of a zebra). Our work highlights the fact that in safety-critical applications, there is need for security around not only the machine learning pipeline but also the model interpretation process.
   </details>
-* [Fooling Partial Dependence via Data Poisoning](https://arxiv.org/abs/2105.12837)
+* [Fooling Partial Dependence via Data Poisoning](https://doi.org/10.1007/978-3-031-26409-2_8)
   <details>
   <summary> H. Baniecki et al. 
       <em>European Conference on Machine Learning and PKDD (ECML PKDD)</em>, 2022 </summary>
