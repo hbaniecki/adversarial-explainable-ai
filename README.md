@@ -156,6 +156,12 @@ There are various adversarial attacks on machine learning models and ways of def
       <em>Explainable AI: Interpreting, Explaining and Visualizing Deep Learning</em>, 2019 </summary>
     Saliency methods aim to explain the predictions of deep neural networks. These methods lack reliability when the explanation is sensitive to factors that do not contribute to the model prediction. We use a simple and common pre-processing step which can be compensated for easily—adding a constant shift to the input data—to show that a transformation with no effect on how the model makes the decision can cause numerous methods to attribute incorrectly. In order to guarantee reliability, we believe that the explanation should not change when we can guarantee that two networks process the images in identical manners. We show, through several examples, that saliency methods that do not satisfy this requirement result in misleading attribution. The approach can be seen as a type of unit test; we construct a narrow ground truth to measure one stated desirable property. As such, we hope the community will embrace the development of additional tests.
   </details>
+* [How to Manipulate CNNs to Make Them Lie: the GradCAM Case](https://doi.org/10.48550/arXiv.1907.10901)
+  <details>
+  <summary> T. Viering et al. 
+      <em>BMVC Workshop on Interpretable and Explainable Machine Vision (BMVC Workshop)</em>, 2019 </summary>
+    Recently many methods have been introduced to explain CNN decisions. However, it has been shown that some methods can be sensitive to manipulation of the input. We continue this line of work and investigate the explanation method GradCAM. Instead of manipulating the input, we consider an adversary that manipulates the model itself to attack the explanation. By changing weights and architecture, we demonstrate that it is possible to generate any desired explanation, while leaving the model's accuracy essentially unchanged. This illustrates that GradCAM cannot explain the decision of every CNN and provides a proof of concept showing that it is possible to obfuscate the inner workings of a CNN. Finally, we combine input and model manipulation. To this end we put a backdoor in the network: the explanation is correct unless there is a specific pattern present in the input, which triggers a malicious explanation. Our work raises new security concerns, especially in settings where explanations of models may be used to make decisions, such as in the medical domain.
+  </details>
 * [Fooling Neural Network Interpretations via Adversarial Model Manipulation](https://papers.nips.cc/paper/8558-fooling-neural-network-interpretations-via-adversarial-model-manipulation#:~:text=paper)
   <details>
   <summary> J. Heo et al. 
@@ -262,19 +268,13 @@ There are various adversarial attacks on machine learning models and ways of def
   </details> 
 
 
-### Defense from the attacks & robust explanations
+### Defense against the attacks on explanations
 
 * [Adversarial explanations for understanding image classification decisions and improved NN robustness](https://arxiv.org/abs/1906.02896#:~:text=pdf)
   <details>
   <summary> W. Woods et al. 
       <em>Nature Machine Intelligence</em>, 2019 </summary>
     For sensitive problems, such as medical imaging or fraud detection, Neural Network (NN) adoption has been slow due to concerns about their reliability, leading to a number of algorithms for explaining their decisions. NNs have also been found vulnerable to a class of imperceptible attacks, called adversarial examples, which arbitrarily alter the output of the network. Here we demonstrate both that these attacks can invalidate prior attempts to explain the decisions of NNs, and that with very robust networks, the attacks themselves may be leveraged as explanations with greater fidelity to the model. We show that the introduction of a novel regularization technique inspired by the Lipschitz constraint, alongside other proposed improvements, greatly improves an NN's resistance to adversarial examples. On the ImageNet classification task, we demonstrate a network with an Accuracy-Robustness Area (ARA) of 0.0053, an ARA 2.4x greater than the previous state of the art. Improving the mechanisms by which NN decisions are understood is an important direction for both establishing trust in sensitive domains and learning more about the stimuli to which NNs respond.
-  </details>
-* [On the (In)fidelity and Sensitivity of Explanations](https://papers.nips.cc/paper/9278-on-the-infidelity-and-sensitivity-of-explanations#:~:text=paper)
-  <details>
-  <summary> C. K. Yeh et al. 
-      <em>Neural Information Processing Systems (NeurIPS)</em>, 2019 </summary>
-    We consider objective evaluation measures of saliency explanations for complex black-box machine learning models. We propose simple robust variants of two notions that have been considered in recent literature: (in)fidelity, and sensitivity. We analyze optimal explanations with respect to both these measures, and while the optimal explanation for sensitivity is a vacuous constant explanation, the optimal explanation for infidelity is a novel combination of two popular explanation methods. By varying the perturbation distribution that defines infidelity, we obtain novel explanations by optimizing infidelity, which we show to out-perform existing explanations in both quantitative and qualitative measurements. Another salient question given these measures is how to modify any given explanation to have better values with respect to these measures. We propose a simple modification based on lowering sensitivity, and moreover show that when done appropriately, we could simultaneously improve both sensitivity as well as fidelity.
   </details>
 * [Robust Attribution Regularization](https://papers.nips.cc/paper/2019/hash/172ef5a94b4dd0aa120c6878fc29f70c-Abstract.html#:~:text=paper)
   <details>
@@ -307,23 +307,11 @@ There are various adversarial attacks on machine learning models and ways of def
       <em>Neural Information Processing Systems (NeurIPS)</em>, 2020 </summary>
     Feature attributions are a popular tool for explaining the behavior of Deep Neural Networks (DNNs), but have recently been shown to be vulnerable to attacks that produce divergent explanations for nearby inputs. This lack of robustness is especially problematic in high-stakes applications where adversarially-manipulated explanations could impair safety and trustworthiness. Building on a geometric understanding of these attacks presented in recent work, we identify Lipschitz continuity conditions on models' gradient that lead to robust gradient-based attributions, and observe that smoothness may also be related to the ability of an attack to transfer across multiple attribution methods. To mitigate these attacks in practice, we propose an inexpensive regularization method that promotes these conditions in DNNs, as well as a stochastic smoothing technique that does not require re-training. Our experiments on a range of image models demonstrate that both of these mitigations consistently improve attribution robustness, and confirm the role that smooth geometry plays in these attacks on real, large-scale models.
   </details>
-* [BayLIME: Bayesian Local Interpretable Model-Agnostic Explanations](https://proceedings.mlr.press/v161/zhao21a.html)
-  <details>
-  <summary> X. Zhao et al. 
-      <em>Uncertainty in Artificial Intelligence (UAI)</em>, 2021</summary>
-    Given the pressing need for assuring algorithmic transparency, Explainable AI (XAI) has emerged as one of the key areas of AI research. In this paper, we develop a novel Bayesian extension to the LIME framework, one of the most widely used approaches in XAI – which we call BayLIME. Compared to LIME, BayLIME exploits prior knowledge and Bayesian reasoning to improve both the consistency in repeated explanations of a single prediction and the robustness to kernel settings. BayLIME also exhibits better explanation fidelity than the state-of-the-art (LIME, SHAP and GradCAM) by its ability to integrate prior knowledge from, e.g., a variety of other XAI techniques, as well as verification and validation (V&V) methods. We demonstrate the desirable properties of BayLIME through both theoretical analysis and extensive experiments.
-  </details>
 * [On Guaranteed Optimal Robust Explanations for NLP Models](https://www.ijcai.org/proceedings/2021/366)
   <details>
   <summary> E. La Malfa et al. 
       <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2021</summary>
     We build on abduction-based explanations for machine learning and develop a method for computing local explanations for neural network models in natural language processing (NLP). Our explanations comprise a subset of the words of the input text that satisfies two key features: optimality w.r.t. a user-defined cost function, such as the length of explanation, and robustness, in that they ensure prediction invariance for any bounded perturbation in the embedding space of the left-out words. We present two solution algorithms, respectively based on implicit hitting sets and maximum universal subsets, introducing a number of algorithmic improvements to speed up convergence of hard instances. We show how our method can be configured with different perturbation sets in the embedded space and used to detect bias in predictions by enforcing include/exclude constraints on biased terms, as well as to enhance existing heuristic-based NLP explanation frameworks such as Anchors. We evaluate our framework on three widely used sentiment analysis tasks and texts of up to 100 words from SST, Twitter and IMDB datasets, demonstrating the effectiveness of the derived explanations.
-  </details>
-* [Reliable Post hoc Explanations: Modeling Uncertainty in Explainability](https://openreview.net/forum?id=rqfq0CYIekd)
-  <details>
-  <summary> D. Slack et al. 
-      <em>Neural Information Processing Systems (NeurIPS)</em>, 2021 </summary>
-    As black box explanations are increasingly being employed to establish model credibility in high stakes settings, it is important to ensure that these explanations are accurate and reliable. However, prior work demonstrates that explanations generated by state-of-the-art techniques are inconsistent, unstable, and provide very little insight into their correctness and reliability. In addition these methods are also computationally inefficient, and require significant hyper-parameter tuning. In this paper, we address the aforementioned challenges by developing a novel Bayesian framework for generating local explanations along with their associated uncertainty. We instantiate this framework to obtain Bayesian versions of LIME and KernelSHAP which output credible intervals for the feature importances, capturing the associated uncertainty. The resulting explanations not only enable us to make concrete inferences about their quality (e.g., there is a 95% chance that the feature importance lies within the given range), but are also highly consistent and stable. We carry out a detailed theoretical analysis that leverages the aforementioned uncertainty to estimate how many perturbations to sample, and how to sample for faster convergence. This work makes the first attempt at addressing several critical issues with popular explanation methods in one shot, thereby generating consistent, stable, and reliable explanations with guarantees in a computationally efficient manner. Experimental evaluation with multiple real world datasets and user studies demonstrate that the efficacy of the proposed framework.
   </details>
 * [On Locality of Local Explanation Models](https://openreview.net/forum?id=6OkPFFMgBt)
   <details>
@@ -393,6 +381,26 @@ There are various adversarial attacks on machine learning models and ways of def
     Post-hoc explanation methods are used with the intent of providing insights about neural networks and are sometimes said to help engender trust in their outputs. However, popular explanations methods have been found to be fragile to minor perturbations of input features or model parameters. Relying on constraint relaxation techniques from non-convex optimization, we develop a method that upper-bounds the largest change an adversary can make to a gradient-based explanation via bounded manipulation of either the input features or model parameters. By propagating a compact input or parameter set as symbolic intervals through the forwards and backwards computations of the neural network we can formally certify the robustness of gradient-based explanations. Our bounds are differentiable, hence we can incorporate provable explanation robustness into neural network training. Empirically, our method surpasses the robustness provided by previous heuristic approaches. We find that our training method is the only method able to learn neural networks with certificates of explanation robustness across all six datasets tested. 
   </details> 
 
+### Towards robust and stable explanations
+
+* [On the (In)fidelity and Sensitivity of Explanations](https://papers.nips.cc/paper/9278-on-the-infidelity-and-sensitivity-of-explanations#:~:text=paper)
+  <details>
+  <summary> C. K. Yeh et al. 
+      <em>Neural Information Processing Systems (NeurIPS)</em>, 2019 </summary>
+    We consider objective evaluation measures of saliency explanations for complex black-box machine learning models. We propose simple robust variants of two notions that have been considered in recent literature: (in)fidelity, and sensitivity. We analyze optimal explanations with respect to both these measures, and while the optimal explanation for sensitivity is a vacuous constant explanation, the optimal explanation for infidelity is a novel combination of two popular explanation methods. By varying the perturbation distribution that defines infidelity, we obtain novel explanations by optimizing infidelity, which we show to out-perform existing explanations in both quantitative and qualitative measurements. Another salient question given these measures is how to modify any given explanation to have better values with respect to these measures. We propose a simple modification based on lowering sensitivity, and moreover show that when done appropriately, we could simultaneously improve both sensitivity as well as fidelity.
+  </details>
+* [BayLIME: Bayesian Local Interpretable Model-Agnostic Explanations](https://proceedings.mlr.press/v161/zhao21a.html)
+  <details>
+  <summary> X. Zhao et al. 
+      <em>Uncertainty in Artificial Intelligence (UAI)</em>, 2021</summary>
+    Given the pressing need for assuring algorithmic transparency, Explainable AI (XAI) has emerged as one of the key areas of AI research. In this paper, we develop a novel Bayesian extension to the LIME framework, one of the most widely used approaches in XAI – which we call BayLIME. Compared to LIME, BayLIME exploits prior knowledge and Bayesian reasoning to improve both the consistency in repeated explanations of a single prediction and the robustness to kernel settings. BayLIME also exhibits better explanation fidelity than the state-of-the-art (LIME, SHAP and GradCAM) by its ability to integrate prior knowledge from, e.g., a variety of other XAI techniques, as well as verification and validation (V&V) methods. We demonstrate the desirable properties of BayLIME through both theoretical analysis and extensive experiments.
+  </details>
+* [Reliable Post hoc Explanations: Modeling Uncertainty in Explainability](https://openreview.net/forum?id=rqfq0CYIekd)
+  <details>
+  <summary> D. Slack et al. 
+      <em>Neural Information Processing Systems (NeurIPS)</em>, 2021 </summary>
+    As black box explanations are increasingly being employed to establish model credibility in high stakes settings, it is important to ensure that these explanations are accurate and reliable. However, prior work demonstrates that explanations generated by state-of-the-art techniques are inconsistent, unstable, and provide very little insight into their correctness and reliability. In addition these methods are also computationally inefficient, and require significant hyper-parameter tuning. In this paper, we address the aforementioned challenges by developing a novel Bayesian framework for generating local explanations along with their associated uncertainty. We instantiate this framework to obtain Bayesian versions of LIME and KernelSHAP which output credible intervals for the feature importances, capturing the associated uncertainty. The resulting explanations not only enable us to make concrete inferences about their quality (e.g., there is a 95% chance that the feature importance lies within the given range), but are also highly consistent and stable. We carry out a detailed theoretical analysis that leverages the aforementioned uncertainty to estimate how many perturbations to sample, and how to sample for faster convergence. This work makes the first attempt at addressing several critical issues with popular explanation methods in one shot, thereby generating consistent, stable, and reliable explanations with guarantees in a computationally efficient manner. Experimental evaluation with multiple real world datasets and user studies demonstrate that the efficacy of the proposed framework.
+  </details>
 
 ### Adversarial attacks on fairness measures
 
@@ -435,7 +443,7 @@ There are various adversarial attacks on machine learning models and ways of def
 
 
 <details>
-<summary> <h3> Related evaluations </h3> </summary>
+<summary> <h3> Related evaluations of explanations </h3> </summary>
 
 * [A Benchmark for Interpretability Methods in Deep Neural Networks](https://papers.neurips.cc/paper/9167-a-benchmark-for-interpretability-methods-in-deep-neural-networkss#:~:text=pdf)
   <details>
