@@ -402,7 +402,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
   </details>
 
 
-### Adversarial attacks on fairness metrics
+## Adversarial attacks on fairness metrics
 
 * [Fairwashing: the risk of rationalization](https://proceedings.mlr.press/v97/aivodji19a#:~:text=download%20pdf)
   <details open>
