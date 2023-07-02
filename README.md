@@ -142,13 +142,13 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>Neural Information Processing Systems (NeurIPS)</em>, 2019 </summary>
     We ask whether the neural network interpretation methods can be fooled via adversarial model manipulation, which is defined as a model fine-tuning step that aims to radically alter the explanations without hurting the accuracy of the original models, e.g., VGG19, ResNet50, and DenseNet121. By incorporating the interpretation results directly in the penalty term of the objective function for fine-tuning, we show that the state-of-the-art saliency map based interpreters, e.g., LRP, Grad-CAM, and SimpleGrad, can be easily fooled with our model manipulation. We propose two types of fooling, Passive and Active, and demonstrate such foolings generalize well to the entire validation set as well as transfer to other interpretation methods. Our results are validated by both visually showing the fooled explanations and reporting quantitative metrics that measure the deviations from the original explanations. We claim that the stability of neural network interpretation method with respect to our adversarial model manipulation is an important criterion to check for developing robust and reliable neural network interpretation method.
   </details>
-* [Explanations can be manipulated and geometry is to blame](https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame#:~:text=paper)
+* [Explanations can be manipulated and geometry is to blame](https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame)
   <details open>
   <summary> A. K. Dombrowski et al. 
       <em>Neural Information Processing Systems (NeurIPS)</em>, 2019 </summary>
     Explanation methods aim to make neural networks more trustworthy and interpretable. In this paper, we demonstrate a property of explanation methods which is disconcerting for both of these purposes. Namely, we show that explanations can be manipulated arbitrarily by applying visually hardly perceptible perturbations to the input that keep the network's output approximately constant. We establish theoretically that this phenomenon can be related to certain geometrical properties of neural networks. This allows us to derive an upper bound on the susceptibility of explanations to manipulations. Based on this result, we propose effective mechanisms to enhance the robustness of explanations.
   </details>
-  <p align="center"><img height='500' src="fig/attack.png"></p>
+  <p align="center"><a href="https://papers.nips.cc/paper/9511-explanations-can-be-manipulated-and-geometry-is-to-blame"><img height='500' src="fig/attack.png"></a></p>
 * [You Shouldn't Trust Me: Learning Models Which Conceal Unfairness From Multiple Explanation Methods](https://ecai2020.eu/papers/72_paper.pdf)
   <details>
   <summary> B. Dimanov et al. 
@@ -161,7 +161,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>AAAI/ACM Conference on AI, Ethics, and Society (AIES)</em>, 2020 </summary>
     As machine learning black boxes are increasingly being deployed in domains such as healthcare and criminal justice, there is growing emphasis on building tools and techniques for explaining these black boxes in an interpretable manner. Such explanations are being leveraged by domain experts to diagnose systematic errors and underlying biases of black boxes. In this paper, we demonstrate that post hoc explanations techniques that rely on input perturbations, such as LIME and SHAP, are not reliable. Specifically, we propose a novel scaffolding technique that effectively hides the biases of any given classifier by allowing an adversarial entity to craft an arbitrary desired explanation. Our approach can be used to scaffold any biased classifier in such a way that its predictions on the input data distribution still remain biased, but the post hoc explanations of the scaffolded classifier look innocuous. Using extensive evaluation with multiple real world datasets (including COMPAS), we demonstrate how extremely biased (racist) classifiers crafted by our framework can easily fool popular explanation techniques such as LIME and SHAP into generating innocuous explanations which do not reflect the underlying biases.
   </details>
-    <p align="center"><img height='300' src="fig/attack2.png"></p>
+    <p align="center"><a href="https://dl.acm.org/doi/10.1145/3375627.3375830"><img height='300' src="fig/attack2.png"></a></p>
 * [“How do I fool you?": Manipulating User Trust via Misleading Black Box Explanations](https://dl.acm.org/doi/10.1145/3375627.3375833#:~:text=pdf)
   <details>
   <summary> H. Lakkaraju & O. Bastani. 
@@ -274,7 +274,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>Workshop on Human Interpretability in Machine Learning (ICML WHI)</em>, 2020 </summary>
     With machine learning models being used for more sensitive applications, we rely on interpretability methods to prove that no discriminating attributes were used for classification. A potential concern is the so-called "fair-washing" - manipulating a model such that the features used in reality are hidden and more innocuous features are shown to be important instead. In our work we present an effective defence against such adversarial attacks on neural networks. By a simple aggregation of multiple explanation methods, the network becomes robust against manipulation. This holds even when the attacker has exact knowledge of the model weights and the explanation methods used.
   </details>
-  <p align="center"><img height='500' src="fig/defense.png"></p>
+  <p align="center"><a href="https://arxiv.org/abs/2007.06381"><img height='500' src="fig/defense.png"></a></p>
 * [Proper Network Interpretability Helps Adversarial Robustness in Classification](https://proceedings.mlr.press/v119/boopathy20a#:~:text=download%20pdf)
   <details>
   <summary> A. Boopathy et al. 
@@ -341,14 +341,14 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>Artificial Intelligence</em>, 2022 </summary>
     Motivated by the recent discovery that the interpretation maps of CNNs could easily be manipulated by adversarial attacks against network interpretability, we study the problem of interpretation robustness from a new perspective of Rényi differential privacy (RDP). The advantages of our Rényi-Robust-Smooth (RDP-based interpretation method) are three-folds. First, it can offer provable and certifiable top-k robustness. That is, the top-k important attributions of the interpretation map are provably robust under any input perturbation with bounded l_d-norm (for any d >= 1, including  d = inf). Second, our proposed method offers ∼12% better experimental robustness than existing approaches in terms of the top-k attributions. Remarkably, the accuracy of Rényi-Robust-Smooth also outperforms existing approaches. Third, our method can provide a smooth tradeoff between robustness and computational efficiency. Experimentally, its top-k attributions are twice more robust than existing approaches when the computational resources are highly constrained.
   </details>
-* [Unfooling Perturbation-Based Post Hoc Explainers](https://arxiv.org/abs/2205.14772v2)
+* [Unfooling Perturbation-Based Post Hoc Explainers](https://doi.org/10.1609/aaai.v37i6.25847)
   <details open>
   <summary> Z. Carmichael & W. J. Scheirer. 
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2023 </summary>
     Monumental advancements in artificial intelligence (AI) have lured the interest of doctors, lenders, judges, and other professionals. While these high-stakes decision-makers are optimistic about the technology, those familiar with AI systems are wary about the lack of transparency of its decision-making processes. Perturbation-based post hoc explainers offer a model agnostic means of interpreting these systems while only requiring query-level access. However, recent work demonstrates that these explainers can be fooled adversarially. This discovery has adverse implications for auditors, regulators, and other sentinels. With this in mind, several natural questions arise - how can we audit these black box systems? And how can we ascertain that the auditee is complying with the audit in good faith? In this work, we rigorously formalize this problem and devise a defense against adversarial attacks on perturbation-based explainers. We propose algorithms for the detection (CAD-Detect) and defense (CAD-Defend) of these attacks, which are aided by our novel conditional anomaly detection approach, KNN-CAD. We demonstrate that our approach successfully detects whether a black box system adversarially conceals its decision-making process and mitigates the adversarial attack on real-world data for the prevalent explainers, LIME and SHAP.
   </details>
-    <p align="center"><img height='500' src="fig/defense2.png"></p>
-* [Towards More Robust Interpretation via Local Gradient Alignment](https://arxiv.org/abs/2211.15900)
+    <p align="center"><a href="https://doi.org/10.1609/aaai.v37i6.25847"><img height='500' src="fig/defense2.png"></a></p>
+* [Towards More Robust Interpretation via Local Gradient Alignment](https://doi.org/10.1609/aaai.v37i7.25986)
   <details>
   <summary> S. Joo et al.
       <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2023 </summary>
@@ -404,13 +404,13 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 
 ## Adversarial attacks on fairness metrics
 
-* [Fairwashing: the risk of rationalization](https://proceedings.mlr.press/v97/aivodji19a#:~:text=download%20pdf)
+* [Fairwashing: the risk of rationalization](https://proceedings.mlr.press/v97/aivodji19a)
   <details open>
   <summary> U. Aivodji et al. 
       <em>International Conference on Machine Learning (ICML)</em>, 2019 </summary>
     Black-box explanation is the problem of explaining how a machine learning model – whose internal logic is hidden to the auditor and generally complex – produces its outcomes. Current approaches for solving this problem include model explanation, outcome explanation as well as model inspection. While these techniques can be beneficial by providing interpretability, they can be used in a negative manner to perform fairwashing, which we define as promoting the false perception that a machine learning model respects some ethical values. In particular, we demonstrate that it is possible to systematically rationalize decisions taken by an unfair black-box model using the model explanation as well as the outcome explanation approaches with a given fairness metric. Our solution, LaundryML, is based on a regularized rule list enumeration algorithm whose objective is to search for fair rule lists approximating an unfair black-box model. We empirically evaluate our rationalization technique on black-box models trained on real-world datasets and show that one can obtain rule lists with high fidelity to the black-box model while being considerably less unfair at the same time.
   </details>
-      <p align="center"><img height='250' src="fig/fairness.png"></p>
+      <p align="center"><a href="https://proceedings.mlr.press/v97/aivodji19a"><img height='250' src="fig/fairness.png"></a></p>
 * [Faking Fairness via Stealthily Biased Sampling](https://doi.org/10.1609/aaai.v34i01.5377)
   <details>
   <summary> K. Fukuchi et al. 
