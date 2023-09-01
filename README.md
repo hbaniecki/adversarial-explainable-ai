@@ -27,7 +27,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 
 ```
 @article{baniecki2023adversarial,
-  authors = {Hubert Baniecki and Przemyslaw Biecek},
+  author = {Hubert Baniecki and Przemyslaw Biecek},
   title   = {Adversarial Attacks and Defenses in Explainable 
              Artificial Intelligence: A Survey},
   journal = {arXiv preprint arXiv:2306.06123},
