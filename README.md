@@ -7,6 +7,8 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 
 ### Survey
 
+**September, 2023**: An extended version of the paper is available on arXiv: https://arxiv.org/abs/2306.06123v2
+
 **June, 2023**: We summarized the current state of the AdvXAI field in the following survey paper (work in progress)
 
 > H. Baniecki, P. Biecek.  **Adversarial Attacks and Defenses in Explainable Artificial Intelligence: A Survey**. *IJCAI Workshop on XAI*, 2023. https://arxiv.org/abs/2306.06123v1
@@ -20,7 +22,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
   </a>
 </p> 
 
-> Explainable artificial intelligence (XAI) methods are portrayed as a remedy for debugging and trusting statistical and deep learning models, as well as interpreting their predictions. However, recent advances in adversarial machine learning highlight the limitations and vulnerabilities of state-of-the-art explanations, putting their security and trustworthiness into question. The possibility of manipulating, fooling or fairwashing evidence of the model's reasoning has detrimental consequences when applied in high-stakes decision-making and knowledge discovery. This concise survey of over 50 papers summarizes research concerning adversarial attacks on explanations of machine learning models, as well as fairness metrics. We discuss how to defend against attacks and design robust interpretation methods. We contribute a list of existing insecurities in XAI and outline the emerging research directions in adversarial XAI (AdvXAI).
+> Explainable artificial intelligence (XAI) methods are portrayed as a remedy for debugging and trusting statistical and deep learning models, as well as interpreting their predictions. However, recent advances in adversarial machine learning (AdvML) highlight the limitations and vulnerabilities of state-of-the-art explanation methods, putting their security and trustworthiness into question. The possibility of manipulating, fooling or fairwashing evidence of the model's reasoning has detrimental consequences when applied in high-stakes decision-making and knowledge discovery. This survey provides a comprehensive overview of research concerning adversarial attacks on explanations of machine learning models, as well as fairness metrics. We introduce a unified notation and taxonomy of methods facilitating a common ground for researchers and practitioners from the intersecting research fields of AdvML and XAI. We discuss how to defend against attacks and design robust interpretation methods. We contribute a list of existing insecurities in XAI and outline the emerging research directions in adversarial XAI (AdvXAI). Future work should address improving explanation methods and evaluation protocols to take into account the reported safety issues.
 
 
 ### Citation
