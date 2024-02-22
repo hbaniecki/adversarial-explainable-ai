@@ -1,23 +1,22 @@
 # Adversarial Attacks and Defenses in Explainable AI
 
-A curated list of papers concerning adversarial explainable AI (AdvXAI). 
-
-**Contributions and comments are welcomed!** Send a pull request to this repository or write me at [h.baniecki@uw.edu.pl](mailto:h.baniecki@uw.edu.pl)
-
+A curated list of papers concerning adversarial explainable AI (AdvXAI).
 
 ### Survey
 
-**September, 2023**: An extended version of the paper is available on arXiv: https://arxiv.org/abs/2306.06123v2
+**February, 2024**: A survey is now published in <em>Information Fusion</em> at https://doi.org/10.1016/j.inffus.2024.102303
+
+**September, 2023**: An extended version of the paper is now available [on arXiv](https://arxiv.org/abs/2306.06123)
 
 **June, 2023**: We summarized the current state of the AdvXAI field in the following survey paper (work in progress)
 
-> H. Baniecki, P. Biecek.  **Adversarial Attacks and Defenses in Explainable Artificial Intelligence: A Survey**. *IJCAI Workshop on XAI*, 2023. https://arxiv.org/abs/2306.06123v1
+> H. Baniecki, P. Biecek.  **Adversarial Attacks and Defenses in Explainable Artificial Intelligence: A Survey**. *IJCAI Workshop on XAI*, 2023.
 
 
 ### Abstract
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2306.06123">
+  <a href="https://doi.org/10.1016/j.inffus.2024.102303">
     <img src="fig/abstract.png">
   </a>
 </p> 
@@ -28,12 +27,12 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 ### Citation
 
 ```
-@article{baniecki2023adversarial,
-  author = {Hubert Baniecki and Przemyslaw Biecek},
+@article{baniecki2024adversarial,
+  author  = {Hubert Baniecki and Przemyslaw Biecek},
   title   = {Adversarial Attacks and Defenses in Explainable 
              Artificial Intelligence: A Survey},
-  journal = {arXiv preprint arXiv:2306.06123},
-  year    = {2023}
+  journal = {Information Fusion},
+  year    = {2024},
 }
 ```
 
@@ -81,6 +80,12 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
   <summary> M. Nauta et al.  
       <em>ACM Computing Surveys</em>, 2023 </summary>
     The rising popularity of explainable artificial intelligence (XAI) to understand high-performing black boxes raised the question of how to evaluate explanations of machine learning (ML) models. While interpretability and explainability are often presented as a subjectively validated binary property, we consider it a multi-faceted concept. We identify 12 conceptual properties, such as Compactness and Correctness, that should be evaluated for comprehensively assessing the quality of an explanation. Our so-called Co-12 properties serve as categorization scheme for systematically reviewing the evaluation practices of more than 300 papers published in the last 7 years at major AI and ML conferences that introduce an XAI method. We find that 1 in 3 papers evaluate exclusively with anecdotal evidence, and 1 in 5 papers evaluate with users. This survey also contributes to the call for objective, quantifiable evaluation methods by presenting an extensive overview of quantitative XAI evaluation methods. Our systematic collection of evaluation methods provides researchers and practitioners with concrete tools to thoroughly validate, benchmark and compare new and existing XAI methods. The Co-12 categorization scheme and our identified evaluation methods open up opportunities to include quantitative metrics as optimization criteria during model training in order to optimize for accuracy and interpretability simultaneously.
+  </details>
+* [SoK: Explainable Machine Learning in Adversarial Environments](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a021/1RjE9XVNjnW)
+  <details>
+  <summary> M. Noppel & C. Wressnegger.
+      <em>IEEE Symposium on Security and Privacy (S&P)</em>, 2024 </summary>
+    Modern deep learning methods have long been considered black boxes due to the lack of insights into their decision-making process. However, recent advances in explainable machine learning have turned the tables. Post-hoc explanation methods enable precise relevance attribution of input features for otherwise opaque models such as deep neural networks. This progression has raised expectations that these techniques can uncover attacks against learning-based systems such as adversarial examples or neural backdoors. Unfortunately, current methods are not robust against manipulations themselves. In this paper, we set out to systematize attacks against post-hoc explanation methods to lay the groundwork for developing more robust explainable machine learning. If explanation methods cannot be misled by an adversary, they can serve as an effective tool against attacks, marking a turning point in adversarial machine learning. We present a hierarchy of explanation-aware robustness notions and relate existing defenses to it. In doing so, we uncover synergies, research gaps, and future directions toward more reliable explanations robust against manipulations.
   </details>
 
 
@@ -260,11 +265,29 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>IEEE Transactions on Reliability</em>, 2023 </summary>
     With the increased use of deep learning in many fields, a question has been raised: "How much should we trust the results generated by deep learning models?" Thus, there has been much research into the interpretations of model results, in order to open the black box of deep learning. The focus is more on interpretation than prediction in some fields such as medicine. Adversarial attacks are the most direct threats to deep learning models. They can add undetectable perturbations to the data to make the models give incorrect results, and model explanations are also susceptible to attacks. This leads to a loss of trust in explanations provided by the models, limiting the application and commercial value of deep learning. This research proposes a targeted adversarial attack algorithm that manipulates the interpretation of the model. Unlike other adversarial attacks on model interpretation, focus-shifting attack (FS Attack) can preserve the numerical depth of the original saliency map without specifying a perturbation budget. Experiments have shown that the FS Attack has a higher degree of image similarity and misleading interpretation than other adversarial attacks, and the property of preserving the numerical depth of the original saliency map makes it more difficult to detect. This study uses several common explanation methods as experimental subjects to investigate how these explanations can be manipulated and evaluate the effectiveness of the attack under different conditions. Under a particular interpretation, the FS Attack has a highly successful attack rate of 94.6, which is a critical adversarial attack.
   </details>
+* [Interpretation Attacks and Defenses on Predictive Models Using Electronic Health Records](https://doi.org/10.1007/978-3-031-43418-1_27)
+  <details>
+  <summary> F. Razmi et al. 
+      <em>European Conference on Machine Learning and PKDD (ECML PKDD)</em>, 2023 </summary>
+    The emergence of complex deep neural networks made it crucial to employ interpretation methods for gaining insight into the rationale behind model predictions. However, recent studies have revealed attacks on these interpretations, which aim to deceive users and subvert the trustworthiness of the models. It is especially critical in medical systems, where interpretations are essential in explaining outcomes. This paper presents the first interpretation attack on predictive models using sequential electronic health records (EHRs). Prior attempts in image interpretation mainly utilized gradient-based methods, yet our research shows that our attack can attain significant success on EHR interpretations that do not rely on model gradients. We introduce metrics compatible with EHR data to evaluate the attack’s success. Moreover, our findings demonstrate that detection methods that have successfully identified conventional adversarial examples are ineffective against our attack. We then propose a defense method utilizing auto-encoders to de-noise the data and improve the interpretations’ robustness. Our results indicate that this de-noising method outperforms the widely used defense method, SmoothGrad, which is based on adding noise to the data. 
+  </details>
 * [SAFARI: Versatile and Efficient Evaluations for Robustness of Interpretability](https://doi.org/10.48550/arXiv.2208.09418)
   <details>
   <summary> W. Huang et al. 
       <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023 </summary>
     Interpretability of Deep Learning (DL) is a barrier to trustworthy AI. Despite great efforts made by the Explainable AI (XAI) community, explanations lack robustness -- indistinguishable input perturbations may lead to different XAI results. Thus, it is vital to assess how robust DL interpretability is, given an XAI method. In this paper, we identify several challenges that the state-of-the-art is unable to cope with collectively: i) existing metrics are not comprehensive; ii) XAI techniques are highly heterogeneous; iii) misinterpretations are normally rare events. To tackle these challenges, we introduce two black-box evaluation methods, concerning the worst-case interpretation discrepancy and a probabilistic notion of how robust in general, respectively. Genetic Algorithm (GA) with bespoke fitness function is used to solve constrained optimisation for efficient worst-case evaluation. Subset Simulation (SS), dedicated to estimate rare event probabilities, is used for evaluating overall robustness. Experiments show that the accuracy, sensitivity, and efficiency of our methods outperform the state-of-the-arts. Finally, we demonstrate two applications of our methods: ranking robust XAI methods and selecting training schemes to improve both classification and interpretation robustness.
+  </details>
+* [Attribution-based Explanations that Provide Recourse Cannot be Robust](https://jmlr.org/papers/v24/23-0042.html)
+  <details>
+  <summary> H. Fokkema et al. 
+      <em>Journal of Machine Learning Research</em>, 2023 </summary>
+    Different users of machine learning methods require different explanations, depending on their goals. To make machine learning accountable to society, one important goal is to get actionable options for recourse, which allow an affected user to change the decision f(x) of a machine learning system by making limited changes to its input x. We formalize this by providing a general definition of recourse sensitivity, which needs to be instantiated with a utility function that describes which changes to the decisions are relevant to the user. This definition applies to local attribution methods, which attribute an importance weight to each input feature. It is often argued that such local attributions should be robust, in the sense that a small change in the input x that is being explained, should not cause a large change in the feature weights. However, we prove formally that it is in general impossible for any single attribution method to be both recourse sensitive and robust at the same time. It follows that there must always exist counterexamples to at least one of these properties. We provide such counterexamples for several popular attribution methods, including LIME, SHAP, Integrated Gradients and SmoothGrad. Our results also cover counterfactual explanations, which may be viewed as attributions that describe a perturbation of x. We further discuss possible ways to work around our impossibility result, for instance by allowing the output to consist of sets with multiple attributions, and we provide sufficient conditions for specific classes of continuous functions to be recourse sensitive. Finally, we strengthen our impossibility result for the restricted case where users are only able to change a single attribute of x, by providing an exact characterization of the functions f to which impossibility applies.
+  </details>
+* [Don't trust your eyes: on the (un)reliability of feature visualizations](https://openreview.net/forum?id=OZWHYyfPwY)
+  <details>
+  <summary> R. Geirho et al. 
+      <em>Presented at the ICML 2023 Workshop on AdvML; Rejected from ICLR 2024 with positive ratings (6,6,8,8)</em>, 2023 </summary>
+    How do neural networks extract patterns from pixels? Feature visualizations attempt to answer this important question by visualizing highly activating patterns through optimization. Today, visualization methods form the foundation of our knowledge about the internal workings of neural networks, as a type of mechanistic interpretability. Here we ask: How reliable are feature visualizations? We start our investigation by developing network circuits that trick feature visualizations into showing arbitrary patterns that are completely disconnected from normal network behavior on natural input. We then provide evidence for a similar phenomenon occurring in standard, unmanipulated networks: feature visualizations are processed very differently from standard input, casting doubt on their ability to "explain" how neural networks process natural images. This can be used as a sanity check for feature visualizations. We underpin our empirical findings by theory proving that the set of functions that can be reliably understood by feature visualization is extremely small and does not include general black-box neural networks. Therefore, a promising way forward could be the development of networks that enforce certain structures in order to ensure more reliable feature visualizations.
   </details>
 
 
