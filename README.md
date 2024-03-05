@@ -4,7 +4,7 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 
 ### Survey
 
-**February, 2024**: A survey is now published in <em>Information Fusion</em> at https://doi.org/10.1016/j.inffus.2024.102303
+**February, 2024**: The survey is now published in <em>Information Fusion</em> at https://doi.org/10.1016/j.inffus.2024.102303
 
 **September, 2023**: An extended version of the paper is now available [on arXiv](https://arxiv.org/abs/2306.06123)
 
@@ -29,10 +29,12 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
 ```
 @article{baniecki2024adversarial,
   author  = {Hubert Baniecki and Przemyslaw Biecek},
-  title   = {Adversarial Attacks and Defenses in Explainable 
-             Artificial Intelligence: A Survey},
+  title   = {Adversarial attacks and defenses in 
+             explainable artificial intelligence: A survey},
   journal = {Information Fusion},
-  year    = {2024},
+  volume  = {107},
+  pages   = {102303},
+  year    = {2024}
 }
 ```
 
