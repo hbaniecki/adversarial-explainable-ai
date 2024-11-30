@@ -463,6 +463,12 @@ A curated list of papers concerning adversarial explainable AI (AdvXAI).
       <em>Neural Information Processing Systems (NeurIPS)</em>, 2023</summary>
     To explain predictions made by complex machine learning models, many feature attribution methods have been developed that assign importance scores to input features. Some recent work challenges the robustness of these methods by showing that they are sensitive to input and model perturbations, while other work addresses this issue by proposing robust attribution methods. However, previous work on attribution robustness has focused primarily on gradient-based feature attributions, whereas the robustness of removal-based attribution methods is not currently well understood. To bridge this gap, we theoretically characterize the robustness properties of removal-based feature attributions. Specifically, we provide a unified analysis of such methods and derive upper bounds for the difference between intact and perturbed attributions, under settings of both input and model perturbations. Our empirical results on synthetic and real-world data validate our theoretical results and demonstrate their practical implications, including the ability to increase attribution robustness by improving the model's Lipschitz regularity.
   </details>
+* [On the Robustness of Global Feature Effect Explanations](https://doi.org/10.1007/978-3-031-70344-7_8)
+  <details>
+  <summary> H. Baniecki et al. 
+      <em>European Conference on Machine Learning and PKDD (ECML PKDD)</em>, 2024</summary>
+    We study the robustness of global post-hoc explanations for predictive models trained on tabular data. Effects of predictor features in black-box supervised learning are an essential diagnostic tool for model debugging and scientific discovery in applied sciences. However, how vulnerable they are to data and model perturbations remains an open research question. We introduce several theoretical bounds for evaluating the robustness of partial dependence plots and accumulated local effects. Our experimental results with synthetic and real-world datasets quantify the gap between the best and worst-case scenarios of (mis)interpreting machine learning predictions globally.
+  </details>
 
 
 ## Adversarial attacks on fairness metrics
